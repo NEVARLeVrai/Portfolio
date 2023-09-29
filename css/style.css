@@ -9,7 +9,7 @@
 
 
 section {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 body {
@@ -124,7 +124,7 @@ header{
 
 /* home CSS */
 #home{
-  margin-top: 100px;
+  margin-top: 10px;
   display: flex;
   align-items: center;
   margin-left: 10%;
@@ -219,7 +219,7 @@ header{
   height: 100px;
   padding: 5px 3%; /* Ajoutez un peu de marge en haut et en bas pour l'espacement du texte */
   position:absolute;
-  bottom: -10%;
+  bottom: -7%;
   left: 0%;
   right: 0%;
   background-color: rgba(19, 18, 18, 0.466);
@@ -248,10 +248,40 @@ header{
   transition:0.5s
 }
 
+/* moi */
+#moi{
+  margin-top: -200px;
+  display: flex;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: calc(100ch - 50px);
+  justify-content: space-between;
+}
+#moi .center{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#moi .center h4 {
+  font-size: 40px;
+  color:#b300ffad;
+  transition: 0.5s;
+}
+
+#moi .center h1 {
+  font-size: 15px;
+  color:#fdfdfdad;
+  transition: 0.5s;
+}
+
 
 /* me_contacter */
 #me_contacter{
-  margin-top: 50px;
+  margin-top: -100px;
   display: flex;
   align-items: center;
   margin-left: 10%;
@@ -259,27 +289,27 @@ header{
   height: calc(100vh - 50px);
   justify-content: space-between;
 }
-#me_contacter .left{
-  width: 50%;
+#me_contacter .center{
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-#me_contacter .left h4 {
+#me_contacter .center h4 {
   font-size: 40px;
   color:#b300ffad;
   transition: 0.5s;
 }
 
-#me_contacter .left h1 {
+#me_contacter .center h1 {
   font-size: 20px;
   color:#fdfdfdad;
   transition: 0.5s;
 }
 
-#me_contacter .left button {
+#me_contacter .center button {
     margin-top: 20px;
     width: fit-content;
     padding: 10px 10px;
@@ -291,7 +321,7 @@ header{
     border-radius: 10px;
 }
 
-#me_contacter .left button a {
+#me_contacter .center button a {
   text-decoration: 0;
   color: #b300ffad;
   border: 0;
@@ -300,7 +330,7 @@ header{
   transition: 0.3s;
 }
 
-#me_contacter .left button::before {
+#me_contacter .center button::before {
   position: absolute;
   right: 5px;
   top: 	5px;
@@ -312,7 +342,7 @@ header{
   border-radius: 10px;
 }
 
-#me_contacter .left button:hover {
+#me_contacter .center button:hover {
   letter-spacing: 20px;
 }
 
@@ -330,49 +360,7 @@ header{
   transition: 0.3s;
 }
 
-/* moi */
-#moi{
-  margin-top: 50px;
-  display: flex;
-  align-items: center;
-  margin-left: 10%;
-  margin-right: 10%;
-  height: calc(100vh - 50px);
-  justify-content: space-between;
-}
-#moi .left{
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
-#moi .left h4 {
-  font-size: 40px;
-  color:#b300ffad;
-  transition: 0.5s;
-}
-
-#moi .left h1 {
-  font-size: 20px;
-  color:#fdfdfdad;
-  transition: 0.5s;
-}
-
-#moi .right {
-  width: 30%;
-  height: 100%;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#moi .right img {
-  width: 100%;
-  animation: animate 2s linear ;
-  transition: 0.3s;
-}
 
 /* Personnalisation de l'apparence de la barre de défilement */
 body::-webkit-scrollbar {
@@ -452,10 +440,25 @@ body::-webkit-scrollbar-track {
     transition: 0.5s;
   }
 
-  #home .left button {
-    margin-top: 15px;
-    padding: 5px 5px;
-    border-radius: 10px;
+  #moi .center h4 {
+    font-size: 20px;
+    transition: 0.5s;
+  }
+  
+  #moi .center h1 {
+    font-size: 10px;
+    transition: 0.5s;
+  }
+
+  #me_contacter .center h4 {
+    font-size: 20px;
+    color:#b300ffad;
+    transition: 0.5s;
+  }
+  
+  #me_contacter .center h1 {
+    font-size: 10px;
+    color:#fdfdfdad;
     transition: 0.5s;
   }
 }
@@ -495,6 +498,28 @@ body::-webkit-scrollbar-track {
   
   #home .left h1 {
     font-size: 12px;
+    transition: 0.5s;
+  }
+
+
+  #moi .center h4 {
+    font-size: 15px;
+    transition: 0.5s;
+  }
+  
+  #moi .center h1 {
+    font-size: 8px;
+    transition: 0.5s;
+  }
+  #me_contacter .center h4 {
+    font-size: 16px;
+    color:#b300ffad;
+    transition: 0.5s;
+  }
+  
+  #me_contacter .center h1 {
+    font-size: 12px;
+    color:#fdfdfdad;
     transition: 0.5s;
   }
 }
