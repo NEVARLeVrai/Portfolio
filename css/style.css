@@ -278,6 +278,36 @@ header{
   transition: 0.5s;
 }
 
+/* cv_lm */
+
+#cv_lm{
+  margin-top: -200px;
+  display: flex;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: calc(100ch - 50px);
+  justify-content: space-between;
+}
+#cv_lm .center{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#cv_lm .center h4 {
+  font-size: 40px;
+  color:#b300ffad;
+  transition: 0.5s;
+}
+
+#cv_lm .center h1 {
+  font-size: 15px;
+  color:#fdfdfdad;
+  transition: 0.5s;
+}
 
 /* me_contacter */
 #me_contacter{
