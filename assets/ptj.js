@@ -13,17 +13,17 @@ if (navClose) {
   });
 }
 
-/*==================== REMOVE MENU MOBILE ====================*/
+/*==================== RETIRER LE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll(".nav__link");
 
 function linkAction() {
   const navMenu = document.getElementById("nav-menu");
-  // When we click on each nav__link, we remove the show-menu class
+  // Lorsque nous cliquons sur chaque nav__link, nous retirons la classe show-menu
   navMenu.classList.remove("show-menu");
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-/*======================= ACCORD SKILLS ======================*/
+/*======================= ACCORD DES COMPÉTENCES ======================*/
 
 const skillsContent = document.getElementsByClassName("skills__content"),
   skillsHeader = document.querySelectorAll(".skills__header");
@@ -43,7 +43,7 @@ skillsHeader.forEach((el) => {
   el.addEventListener("click", toggleSkills);
 });
 
-/*============== Qualification Skills ===============*/
+/*============== Qualifications des compétences ===============*/
 
 /*const tabs = document.querySelectorAll('[data-target]'),
       tabContents = document.querySelectorAll('[data-content]')
@@ -62,7 +62,7 @@ tabs.forEach(tab =>{
 })      
 */
 
-/*======================= Services Modal ===================*/
+/*======================= Modal des services ===================*/
 const modalViews = document.querySelectorAll(".services__modal"),
   modalBtns = document.querySelectorAll(".services__button"),
   modalCloses = document.querySelectorAll(".services__modal-close");
@@ -85,7 +85,7 @@ modalCloses.forEach((modalClose) => {
   });
 });
 
-/*======================= Portfolio Swiper ===================*/
+/*======================= Swiper du portfolio ===================*/
 var swiper = new Swiper(".portfolio__container", {
   cssMode: true,
   loop: true,
@@ -100,7 +100,7 @@ var swiper = new Swiper(".portfolio__container", {
   },
 });
 
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+/*==================== LIEN ACTIF DES SECTIONS DÉFILEMENT ====================*/
 const sections = document.querySelectorAll("section[id]");
 
 function scrollActive() {
@@ -124,56 +124,57 @@ function scrollActive() {
 }
 window.addEventListener("scroll", scrollActive);
 
-/*==================== CHANGE BACKGROUND HEADER ====================*/
+/*==================== CHANGER L'EN-TÊTE DE FOND ====================*/
 function scrollHeader() {
   const nav = document.getElementById("header");
-  // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
+  // Lorsque le défilement est supérieur à 200 hauteurs de viewport, ajoutez la classe scroll-header à la balise d'en-tête
   if (this.scrollY >= 80) nav.classList.add("scroll-header");
   else nav.classList.remove("scroll-header");
 }
 window.addEventListener("scroll", scrollHeader);
 
-/*==================== SHOW SCROLL up ====================*/
+/*==================== MONTRER LE DÉFILEMENT ====================*/
 function scrollUp() {
   const scrollUp = document.getElementById("scroll-up");
-  // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+  // Lorsque le défilement est supérieur à 560 hauteurs de viewport, ajoutez la classe show-scroll à la balise a avec la classe scroll-top
   if (this.scrollY >= 560) scrollUp.classList.add("show-scroll");
   else scrollUp.classList.remove("show-scroll");
 }
 window.addEventListener("scroll", scrollUp);
 
-/*==================== DARK LIGHT THEME ====================*/
+/*==================== THÈME SOMBRE CLAIR ====================*/
 const themeButton = document.getElementById("theme-button");
-const darkTheme = "dark-theme";
+const darkTheme = "dark-theme"; // Si vous avez des couleurs spécifiques pour le thème sombre, changez-les ici
 const iconTheme = "uil-sun";
 
-// Previously selected topic (if user selected)
+// Sujet précédemment sélectionné (si l'utilisateur a sélectionné)
 const selectedTheme = localStorage.getItem("selected-theme");
 const selectedIcon = localStorage.getItem("selected-icon");
 
-// We obtain the current theme that the interface has by validating the dark-theme class
+// Nous obtenons le thème actuel que l'interface a en validant la classe dark-theme
 const getCurrentTheme = () =>
   document.body.classList.contains(darkTheme) ? "dark" : "light";
 const getCurrentIcon = () =>
   themeButton.classList.contains(iconTheme) ? "uil-moon" : "uil-sun";
 
-// We validate if the user previously chose a topic
-if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
-    darkTheme,
-  );
-  themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](
-    iconTheme,
-  );
+// Appliquer le thème sombre par défaut
+if (!selectedTheme) {
+  document.body.classList.add(darkTheme); // Ajoute la classe du thème sombre
+  themeButton.classList.add(iconTheme); // Ajoute l'icône du thème sombre
+  localStorage.setItem("selected-theme", "dark"); // Enregistre le thème sombre dans le stockage local
+  localStorage.setItem("selected-icon", iconTheme); // Enregistre l'icône du thème sombre dans le stockage local
+} else {
+  // Si un thème a été précédemment sélectionné, appliquez-le
+  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](darkTheme);
+  themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](iconTheme);
 }
 
-// Activate / deactivate the theme manually with the button
+// Activer / désactiver le thème manuellement avec le bouton
 themeButton.addEventListener("click", () => {
-  // Add or remove the dark / icon theme
+  // Ajouter ou retirer le thème sombre / icône
   document.body.classList.toggle(darkTheme);
   themeButton.classList.toggle(iconTheme);
-  // We save the theme and the current icon that the user chose
+  // Nous sauvegardons le thème et l'icône actuelle que l'utilisateur a choisie
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
