@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta property="og:site_name" content="@Daniels">
-    <meta property="og:title" content="&#x26CA; @Daniels">
+    <meta property="og:site_name" content="@DanielsS">
+    <meta property="og:title" content="&#x26CA; @DanielsS">
     <meta property="og:description" content="Mon portfolio still under construction">
     <meta property="og:url" content="https://github.com/NEVARLeVrai">
     <meta property="og:image:url" href="/assets/img/profile.png">
     <link rel="icon" href="/assets/img/profile.ico">
-    <title>@Daniels</title>
+    <title>@DanielsS</title>
     <link rel="stylesheet" href="assets/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/newcss.css" />
     <link
@@ -53,7 +53,7 @@
             </li>
             <li class="nav__item">
               <a href="#contact" class="nav__link">
-                <i class="uil uil-message nav__icon"></i>Contactez-moi
+                <i class="uil uil-message nav__icon"></i>Me Contacter
               </a>
             </li>
           </ul>
@@ -164,13 +164,23 @@
             </div>
 
             <div class="about__buttons">
-              <a download="" href="assets\MyCV.pdf" class="button button--flex">
+              <a href="#" class="button button--flex" id="downloadCV">
                 Télécharger le CV<i class="fas fa-download button__icon"></i>
               </a>
             </div>
           </div>
         </div>
       </section>
+
+      <script>
+        document.getElementById('downloadCV').addEventListener('click', function(event) {
+          event.preventDefault(); // Empêche le comportement par défaut du lien
+          const userConfirmed = confirm("Vous serez qmenez à d'abord demander l'accès. Voulez-vous continuer ?");
+          if (userConfirmed) {
+            window.location.href = "https://drive.google.com/file/d/10ivIXtvvnUh3EVn_vGkFiPkbXiHDsGD1/view?usp=sharing"; // Lien de téléchargement
+          }
+        });
+      </script>
 
       <!--===================== SKILLS =====================-->
 
@@ -737,7 +747,7 @@
 
       <!--===================== Contact Me =====================-->
       <section class="contact section" id="contact">
-        <h2 class="section__title">Contact</h2>
+        <h2 class="section__title">Contacte</h2>
         <span class="section__subtitle">Me contacter</span>
 
         <div class="contact__container container grid">
@@ -794,7 +804,7 @@
                 class="button button--flex"
                 id="sendEmail"
               >
-                Envoyer le message
+                Envoyer le mail
                 <i class="uil uil-message button__icon"></i>
               </a>
             </div>
@@ -823,7 +833,7 @@
       <div class="footer__bg">
         <div class="footer__container container grid">
           <div>
-            <h1 class="footer__title">Daniels</h1>
+            <h1 class="footer__title">Daniels.exe</h1>
             <span class="footer__subtitle"
               >Étudiant en développement<br> Application et Web</span
             >
@@ -833,7 +843,7 @@
             <li>
               <a href="#home" class="footer__link">Accueil</a>
             </li>
-              <a href="#contact" class="footer__link">Contact</a>
+              <a href="#contact" class="footer__link">Me Contacter</a>
             </li>
           </ul>
     </footer>
