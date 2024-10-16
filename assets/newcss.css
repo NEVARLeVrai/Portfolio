@@ -85,6 +85,13 @@ body.dark-theme {
 }
 
 /*================= Bouton Sombre/Lumineux ===============*/
+.footer__img {
+  left: 100px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
 .nav__btns {
   display: flex;
   align-items: center;
@@ -180,7 +187,7 @@ img {
 }
 
 .nav {
-  max-width: 1000px;
+  max-width: 680px;
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
@@ -191,16 +198,13 @@ img {
   transition: 0.5s /* Ajout de la transition */
 }
 
-.nav__logo,
+
 .nav__toggle {
   color: var(--title-color);
   font-weight: var(--font-medium);
-  margin-left: 20px;
 }
 
-.nav__logo:hover {
-  color: var(--first-color);
-}
+
 .nav__toggle {
   font-size: 1.1rem;
   cursor: pointer;
@@ -247,7 +251,6 @@ img {
     transition: 0.5s /* Ajout de la transition */
   }
 
-  .nav__logo,
   .nav__toggle {
     font-size: 1rem; /* Réduction de la taille de la police */
     transition: font-size 0.5s ease; /* Ajout de la transition */
@@ -269,7 +272,6 @@ img {
   .nav {
     transition: 0.5s /* Ajout de la transition */
   }
-  .nav__logo,
   .nav__toggle {
     font-size: 0.85rem; /* Réduction de la taille de la police */
     transition: font-size 0.5s ease; /* Ajout de la transition */
@@ -291,7 +293,6 @@ img {
   .nav {
     transition: 0.5s /* Ajout de la transition */
   }
-  .nav__logo,
   .nav__toggle {
     font-size: small; /* Réduction de la taille de la police */
     transition: font-size 0.5s ease; /* Ajout de la transition */
@@ -781,6 +782,19 @@ img {
   outline: none;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  transition: transform 0.3s ease; /* Ajout de la transition */
+}
+
+.swiper-button-prev:hover {
+  transform: translateX(-5px); /* Déplace la flèche vers la gauche lors du survol */
+}
+
+.swiper-button-next:hover {
+  transform: translateX(5px); /* Déplace la flèche vers la droite lors du survol */
+}
+
 /*================ Contact Me ===============*/
 
 .contact__container {
@@ -869,7 +883,6 @@ img {
 }
 
 
-
 .footer__copy {
     font-size: var(--smaller-font-size);
     text-align: center;
@@ -882,6 +895,9 @@ img {
 
   text-align: center; /* Centre le texte à l'intérieur */
 }
+
+
+
 
 /*==================== Scroll Up ==================*/
 
