@@ -953,6 +953,7 @@ img {
     transition: 0.5s /* Ajout de la transition */
   }
 
+ 
   .nav__menu {
     transition: 0.5s /* Ajout de la transition */
   }
@@ -1010,6 +1011,9 @@ img {
 
 /* For medium Devices */
 @media screen and (min-width: 568px) {
+
+
+  
   .home__content {
     grid-template-columns: max-content 1fr 1fr;
     transition: 0.5s /* Ajout de la transition */
@@ -1045,6 +1049,8 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+
+
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -1228,6 +1234,7 @@ img {
 /* For large devices */
 
 @media screen and (min-width: 968px) {
+  
   .header,
   .main,
   .footer__container {
