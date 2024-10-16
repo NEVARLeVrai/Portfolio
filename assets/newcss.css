@@ -91,6 +91,12 @@ body.dark-theme {
   margin-right: 20px;
 }
 
+.button.button--flex {
+  display: flex;
+  justify-content: center; /* Ajout pour centrer horizontalement */
+  align-items: center; /* Centre verticalement */
+  margin-right: 20px; /* Gardez cette marge si nécessaire */
+}
 .change-theme {
   font-size: 1.25rem;
   color: var(--title-color);
@@ -685,7 +691,7 @@ img {
 .services__modal-content {
   position: relative;
   background-color: var(--container-color);
-  padding: 1.5rem;
+  padding: 20px;
   border-radius: 1.25rem;
 }
 .services__modal-services {
@@ -714,6 +720,8 @@ img {
   color: var(--first-color);
   margin-right: var(--mb-0-25);
 }
+
+
 
 /* Active Modal */
 .active-modal {

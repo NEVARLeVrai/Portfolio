@@ -166,7 +166,7 @@ if (!selectedTheme) {
 } else {
   // Si un thème a été précédemment sélectionné, appliquez-le
   document.body.classList[selectedTheme === "dark" ? "add" : "remove"](darkTheme);
-  themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](iconTheme);
+  themeButton.classList[selectedIcon === "uil-sun" ? "add" : "remove"](iconTheme);
 }
 
 // Activer / désactiver le thème manuellement avec le bouton

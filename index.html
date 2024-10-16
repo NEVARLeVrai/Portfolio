@@ -9,8 +9,8 @@
     <meta property="og:title" content="&#x26CA; @DanielsS">
     <meta property="og:description" content="Mon portfolio still under construction">
     <meta property="og:url" content="https://github.com/NEVARLeVrai">
-    <meta property="og:image:url" href="/assets/img/profile.png">
-    <link rel="icon" href="/assets/img/profile.ico">
+    <meta property="og:image:url" href="../assets/img/profile.png">
+    <link rel="icon" href="../assets/img/profile.ico">
     <title>@DanielsS</title>
     <link rel="stylesheet" href="assets/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/newcss.css" />
@@ -142,7 +142,9 @@
 
           <div class="about__data">
             <p class="about__description">
-              J'ai un intérêt marqué pour l'informatique et la programmation, ainsi que pour les jeux vidéo et le graphisme. Je passe beaucoup de temps à développer mes compétences dans ces domaines en faisant des projets personnels et je m'auto forme en suivant des tutoriels en ligne. J'aime également m'exprimer artistiquement à travers le dessin et le graphisme.
+              J'ai un intérêt marqué pour l'informatique et la programmation, ainsi que pour les jeux vidéo et le graphisme. 
+              Je passe beaucoup de temps à développer mes compétences dans ces domaines en faisant des projets personnels et je m'auto forme en suivant des tutoriels en ligne. 
+              J'aime également m'exprimer artistiquement à travers le dessin et le graphisme.
 
             </p>
 
@@ -163,24 +165,41 @@
               </div>
             </div>
 
-            <div class="about__buttons">
-              <a href="#" class="button button--flex" id="downloadCV">
-                Télécharger le CV<i class="fas fa-download button__icon"></i>
-              </a>
+            
+
+            
+            <span
+            class="button button--flex services__button"
+          >
+            Visualiser le CV
+            <i class="uil uil-arrow-right button__icon"></i>
+          </span>
+          
+          <div class="services__modal">
+            <div class="services__modal-content">
+              <i class="uil uil-times services__modal-close"></i>
+              <h4 class="services__modal-title">Vous serez amenez à d'abord demander l'accès.</h4>
+              <h4 class="services__modal-cotent">Pour des raisons de confidentialité, il est nécessaire de demander l'accès à mon CV.</h4>
+              <br>
+              <ul class="services__modal-services grid">
+                <li class="services__modal-service">
+                  <div class="about__buttons1">
+                    <!-- Contenu supplémentaire peut être ajouté ici -->
+                  </div>
+                  <a href="https://drive.google.com/file/d/10ivIXtvvnUh3EVn_vGkFiPkbXiHDsGD1/view?usp=sharing" class="button button--flex ">
+                    Demander l'accès / le visualiser
+
+                  </a>
+                </li>
+              </ul>
             </div>
+          </div>
+
+
+  
           </div>
         </div>
       </section>
-
-      <script>
-        document.getElementById('downloadCV').addEventListener('click', function(event) {
-          event.preventDefault(); // Empêche le comportement par défaut du lien
-          const userConfirmed = confirm("Vous serez amenez à d'abord demander l'accès. Voulez-vous continuer ?");
-          if (userConfirmed) {
-            window.location.href = "https://drive.google.com/file/d/10ivIXtvvnUh3EVn_vGkFiPkbXiHDsGD1/view?usp=sharing"; // Lien de téléchargement
-          }
-        });
-      </script>
 
       <!--===================== SKILLS =====================-->
 
@@ -334,26 +353,37 @@
                 </div>
               </div>
 
-              <div class="about__buttons1"></div>
-                <a href="#" class="button button--flex" id="VoirTableau">
-                  Voir tableau des compétences<i class="fas fa-download button__icon"></i>
-                </a>
-              </div>
-              
-              <script>
-                document.getElementById('VoirTableau').addEventListener('click', function(event) {
-                  event.preventDefault(); // Empêche le comportement par défaut du lien
-                  const userConfirmed = confirm("Vous serez amenez à d'abord demander l'accès. Voulez-vous continuer ?");
-                  if (userConfirmed) {
-                    window.location.href = "https://docs.google.com/spreadsheets/d/10Spju1wqO4ogHVjUXrPV9zatE3qibo8U/edit?usp=sharing&ouid=110866640149523352016&rtpof=true&sd=true"; // Lien de téléchargement
-                  }
-                });
-              </script>
 
+              <span
+                class="button button--flex services__button"
+              >
+                Tableau des compétences
+                <i class="uil uil-arrow-right button__icon"></i>
+              </span>
+              
+              <div class="services__modal">
+                <div class="services__modal-content">
+                  <i class="uil uil-times services__modal-close"></i>
+                  <h4 class="services__modal-title">Vous serez amenez à d'abord demander l'accès.</h4>
+                  <h4 class="services__modal-cotent">Pour des raisons de confidentialité, il est nécessaire de demander l'accès à mon tableau des compétences.</h4>
+                  <br>
+                  <ul class="services__modal-services grid">
+                    <li class="services__modal-service">
+                      <div class="about__buttons1">
+                        <!-- Contenu supplémentaire peut être ajouté ici -->
+                      </div>
+                      <a href="https://docs.google.com/spreadsheets/d/10Spju1wqO4ogHVjUXrPV9zatE3qibo8U/edit?usp=sharing&ouid=110866640149523352016&rtpof=true&sd=true" class="button button--flex">
+                        Demander l'accès / le visualiser
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
 
             </div>
           </div>
         </div>
+
       </section>
 
       <!--==================== formations ==================-->
