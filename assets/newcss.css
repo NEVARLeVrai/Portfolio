@@ -229,18 +229,8 @@ img {
 .nav__icon {
   font-size: 1.2rem;
 }
-.nav__close {
-  position: absolute;
-  right: 1.3rem;
-  bottom: 0.5rem;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: var(--first-color);
-}
 
-.nav__close:hover {
-  color: var(--first-color-alt);
-}
+
 
 
 @media screen and (max-width: 1300px) {
@@ -297,7 +287,7 @@ img {
   }
   .nav__logo,
   .nav__toggle {
-    font-size: 0.8rem; /* Réduction de la taille de la police */
+    font-size: small; /* Réduction de la taille de la police */
     transition: font-size 0.5s ease; /* Ajout de la transition */
   }
 
@@ -1060,6 +1050,7 @@ img {
     justify-content: center;
     transition: 0.5s /* Ajout de la transition */
   }
+  
 }
 
 @media screen and (min-width: 768px) {
@@ -1104,7 +1095,6 @@ img {
   }
 
   .nav__icon,
-  .nav__close,
   .nav__toggle {
     display: none;
     transition: 0.5s /* Ajout de la transition */
@@ -1241,11 +1231,6 @@ img {
     transition: 0.5s /* Ajout de la transition */
   }
 
-  .footer__links {
-    flex-direction: row;
-    column-gap: 2rem;
-    transition: 0.5s /* Ajout de la transition */
-  }
 
 }
 
@@ -1278,4 +1263,5 @@ img {
     bottom: -4.5rem;
     transition: 0.5s /* Ajout de la transition */
   }
+  
 }
