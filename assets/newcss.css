@@ -33,13 +33,13 @@
   --hue-color: 270 ;
 
   /*========= Mode de couleur HSL =========*/
-  --first-color: hsl(270, 100%, 70%); /* Couleur principale en violet clair */
-  --first-color-second: hsl(270, 100%, 80%); /* Plus clair pour un meilleur contraste */
-  --first-color-alt: hsl(270, 80%, 60%); /* Ajustement pour une teinte plus douce */
-  --first-color-lighter: hsl(270, 80%, 50%); /* Légèrement plus clair */
-  --title-color: hsl(270, 100%, 50%); /* Ajustement pour un meilleur contraste */
-  --text-color: hsl(270, 80%, 30%); /* Plus sombre pour le texte */
-  --text-color-light: hsl(270, 80%, 60%); /* Plus clair pour le texte léger */
+  --first-color: hsl(270, 60%, 40%); /* Couleur principale en violet */
+  --first-color-second: hsl(280, 70%, 75%); /* Plus clair pour un meilleur contraste */
+  --first-color-alt: hsl(260, 50%, 60%); /* Ajustement pour une teinte mauve douce */
+  --first-color-lighter: hsl(250, 40%, 50%); /* Légèrement plus clair */
+  --title-color: hsl(270, 80%, 55%); /* Ajustement pour un meilleur contraste */
+  --text-color: hsl(275, 30%, 20%); /* Plus sombre pour le texte */
+  --text-color-light: hsl(270, 50%, 45%); /* Plus clair pour le texte léger */
   --input-color: hsl(270, 80%, 90%); /* Plus clair pour les champs de saisie */
   --body-color: hsl(270, 100%, 95%); /* Couleur de fond plus claire */
   --container-color: #fff;

@@ -18,7 +18,7 @@
   font-style: normal;
 }
 :root {
-  --swiper-theme-color: rgb(78, 8, 136);
+  --swiper-theme-color: rgb(130, 58, 189);
 }
 .swiper-container {
   margin-left: auto;
@@ -377,7 +377,6 @@ button.swiper-pagination-bullet {
 .swiper-scrollbar {
   border-radius: 10px;
   position: relative;
-  -ms-touch-action: none;
   background: rgba(0, 0, 0, 0.1);
 }
 .swiper-container-horizontal > .swiper-scrollbar {
