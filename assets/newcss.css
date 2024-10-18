@@ -1,11 +1,22 @@
 
 /*================ VARIABLES CSS ==========*/
+
+/* 
+ * This portfolio uses MiSans Fonts.
+ * MiSans Fonts are used under the MiSans Fonts Intellectual Property License Agreement from Xiaomi Inc.
+ */
+
 @font-face {
   font-family: 'Mi Sans';
   src: url('/assets/police/MiSans.ttf') format('truetype');
   font-weight: normal; /* ou bold selon la police */
   font-style: normal; /* ou italic selon la police */
 }
+
+/* 
+ * This portfolio uses inecraft enchantment.
+ * Minecraft enchantment Fonts are used under the Minecraft enchantment Fonts Intellectual Property License Agreement from Mojang Inc.
+ */
 
 @font-face {
   font-family: 'minecraft enchantment';
@@ -675,6 +686,7 @@ img {
   padding: 3.5rem 0.5rem 1.25rem 1.5rem;
   border-radius: 0.25rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
 }
 
 .services__button {
@@ -1071,6 +1083,7 @@ img {
     grid-template-columns: 0.6fr;
     justify-content: center;
     transition: 0.5s /* Ajout de la transition */
+    
   }
   
 }
