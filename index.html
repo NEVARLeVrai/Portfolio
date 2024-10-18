@@ -188,7 +188,7 @@
                   <div class="about__buttons1">
                     <!-- Contenu supplémentaire peut être ajouté ici -->
                   </div>
-                  <a href="https://drive.google.com/file/d/10ivIXtvvnUh3EVn_vGkFiPkbXiHDsGD1/view?usp=sharing" class="button button--flex ">
+                  <a href="https://drive.google.com/file/d/10ivIXtvvnUh3EVn_vGkFiPkbXiHDsGD1/view?usp=sharing" class="button button--flex" target="_blank">
                     Demander l'accès / le visualiser
 
                   </a>
@@ -212,7 +212,7 @@
         <div class="skills__container container grid">
           <div>
             <!--==================== Skill 1 =================-->
-            <div class="skills__content skills__open">
+            <div class="skills__content skills__close"> <!-- Changer skills__open à skills__close -->
               <div class="skills__header">
                 <i class="fas fa-pencil-ruler skills__icon"></i>
 
@@ -293,7 +293,7 @@
                 </div>
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">Symphony 5</h3>
+                    <h3 class="skills__name">Symphony 7</h3>
                     <span class="skills__level">Bas</span> <!-- Niveau ajouté -->
                   </div>
                   
@@ -374,7 +374,7 @@
                       <div class="about__buttons1">
                         <!-- Contenu supplémentaire peut être ajouté ici -->
                       </div>
-                      <a href="https://docs.google.com/spreadsheets/d/10Spju1wqO4ogHVjUXrPV9zatE3qibo8U/edit?usp=sharing&ouid=110866640149523352016&rtpof=true&sd=true" class="button button--flex">
+                      <a href="https://docs.google.com/spreadsheets/d/10Spju1wqO4ogHVjUXrPV9zatE3qibo8U/edit?usp=sharing&ouid=110866640149523352016&rtpof=true&sd=true" class="button button--flex" target="_blank">
                         Le visualiser
                       </a>
                     </li>
@@ -891,6 +891,9 @@
             </li>
               <a href="#contact" class="footer__link">Me Contacter</a>
             </li>
+            </li>
+              <a href="#" id="toggleFontButton" class="footer__link">SECRET</a>
+            </li>
           </ul>
     </footer>
 
@@ -898,6 +901,28 @@
     <a href="#" class="scrollup" id="scroll-up">
       <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
+
+
+    <script>
+      const toggleFontButton = document.getElementById('toggleFontButton');
+      const body = document.body;
+    
+      // Variable pour suivre l'état de la police
+      let isMiSans = true;
+    
+      toggleFontButton.addEventListener('click', () => {
+        if (isMiSans) {
+          // Change la police à "minecraft enchantment"
+          body.style.fontFamily = "'minecraft enchantment', sans-serif";
+        } else {
+          // Change la police à "Mi Sans"
+          body.style.fontFamily = "'Mi Sans', sans-serif";
+        }
+        // Inverse l'état
+        isMiSans = !isMiSans;
+      });
+    </script>
+
 
     <script type="text/javascript" src="assets/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/2205d59d52.js" crossorigin="anonymous"></script>

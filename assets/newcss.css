@@ -1,6 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 /*================ VARIABLES CSS ==========*/
+@font-face {
+  font-family: 'Mi Sans';
+  src: url('/assets/police/MiSans.ttf') format('truetype');
+  font-weight: normal; /* ou bold selon la police */
+  font-style: normal; /* ou italic selon la police */
+}
+
+@font-face {
+  font-family: 'minecraft enchantment';
+  src: url('/assets/police/minecraft-enchantment.ttf') format('truetype'); /* Chemin vers le fichier de police gras */
+  font-weight: bold; /* Poids gras */
+  font-style: normal; /* Style normal */
+}
 
 :root {
   --header-height: 3rem;
@@ -24,7 +36,10 @@
   --scroll-thumb-color: hsl(270, 100%, 70%); /* Ajustement pour le pouce de la barre de défilement */
 
   /*========= Police et typographie ===========*/
-  --body-font: "Poppins", sans-serif;
+
+
+
+  --body-font: "Mi Sans", sans-serif; 
 
   --big-font-size: 2rem;
   --h1-font-size: 1.5rem;
@@ -187,7 +202,7 @@ img {
 }
 
 .nav {
-  max-width: 680px;
+  max-width: 650px;
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
@@ -245,7 +260,7 @@ img {
 
 @media screen and (max-width: 1300px) {
   .nav {
-    max-width: 680px;
+    max-width: 630px;
     height: 200px;
 
     transition: 0.5s /* Ajout de la transition */
@@ -270,7 +285,7 @@ img {
 
 @media screen and (max-width: 1100px) {
   .nav {
-    max-width: 640px;
+    max-width: 610px;
     transition: 0.5s /* Ajout de la transition */
   }
   .nav__toggle {
@@ -292,7 +307,7 @@ img {
 
 @media screen and (max-width: 900px) {
   .nav {
-    max-width: 620px;
+    max-width: 600px;
     transition: 0.5s /* Ajout de la transition */
   }
   .nav__toggle {
