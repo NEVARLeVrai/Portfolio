@@ -1,8 +1,6 @@
 ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif) Bienvenue sur mon Portfolio 👨‍💻 !
 =============================================================================================================================
 
-# Site Web de Portfolio Personnel
-
 Ce dépôt contient le code source et les fichiers de mon site web de portfolio personnel. Le site est développé en utilisant HTML, CSS et JavaScript.
 
 ## Description
