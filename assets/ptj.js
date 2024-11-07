@@ -11,6 +11,8 @@ if (navClose) {
   navClose.addEventListener("click", () => {
     navMenu.classList.remove("show-menu");
   });
+} else {
+  console.error("L'élément nav-close n'existe pas.");
 }
 
 /*==================== RETIRER LE MENU MOBILE ====================*/

@@ -213,7 +213,7 @@ img {
 }
 
 .nav {
-  max-width: 640px;
+  max-width: 750px;
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
@@ -271,7 +271,7 @@ img {
 
 @media screen and (max-width: 1300px) {
   .nav {
-    max-width: 630px;
+    max-width: 740px;
     height: 200px;
 
     transition: 0.5s /* Ajout de la transition */
@@ -296,7 +296,7 @@ img {
 
 @media screen and (max-width: 1100px) {
   .nav {
-    max-width: 610px;
+    max-width: 710px;
     transition: 0.5s /* Ajout de la transition */
   }
   .nav__toggle {
@@ -318,7 +318,7 @@ img {
 
 @media screen and (max-width: 900px) {
   .nav {
-    max-width: 600px;
+    max-width: 690px;
     transition: 0.5s /* Ajout de la transition */
   }
   .nav__toggle {
@@ -338,11 +338,6 @@ img {
   }
 }
 
-
-/* Show Menu */
-.show-menu {
-  bottom: 0;
-}
 
 /* Active Link */
 .active-link {
@@ -1090,7 +1085,11 @@ img {
 
 @media screen and (min-width: 768px) {
 
-
+  .nav__icon,
+  .nav__close,
+  .nav__toggle {
+    display: none;
+  }
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -1303,4 +1302,51 @@ img {
     transition: 0.5s /* Ajout de la transition */
   }
   
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    bottom: -100%; /* Position initiale hors de l'écran */
+    left: 0;
+    width: 100%;
+    background-color: var(--input-color);
+    padding: 2rem 1.5rem;
+    box-shadow: 0 -1px 4px var(--body-color);
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: 0.3s; /* Transition pour l'animation */
+  }
+
+  .nav {
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  
+  .nav__toggle {
+    font-size: 17px; /* Augmentez la taille de la police ici */
+  }
+  .nav__close,
+  .nav__icon{
+    font-size: 20px; /* Augmentez la taille de la police ici */
+  }
+
+  .header {
+    width: 100%; /* Assurez-vous que la largeur est à 100% */
+    height: 70px; /* Réduit la hauteur de la barre de navigation */
+    position: fixed; /* Reste fixe en bas */
+    bottom: 0; /* Positionne la navbar en bas */
+    left: 0; /* Aligne à gauche */
+    z-index: var(--z-fixed);
+    background-color: var(--input-color); /* Couleur de fond */
+    border-top: 2px solid var(--body-color); /* Bordure supérieure pour un effet visuel */
+    padding: 0.25rem 0; /* Réduit le padding en haut et en bas */
+    font-size: 0.875rem; /* Ajustez la taille de la police si nécessaire */
+    box-shadow: 0 -2px 5px var(--body-color); /* Ombre pour un effet de profondeur */
+  }
+}
+
+/* Show Menu */
+.show-menu {
+  bottom: 0; /* Positionne le menu visible */
 }
