@@ -1320,15 +1320,18 @@ img {
   .nav {
     height: 20px;
     background-color: rgba(255, 255, 255, 0);
+    transition: 0.5s;
   }
 
   
   .nav__toggle {
     font-size: 17px; /* Augmentez la taille de la police ici */
+    transition: 0.5s;
   }
   .nav__close,
   .nav__icon{
     font-size: 20px; /* Augmentez la taille de la police ici */
+    transition: 0.5s;
   }
 
   .header {
@@ -1343,6 +1346,7 @@ img {
     padding: 0.25rem 0; /* Réduit le padding en haut et en bas */
     font-size: 0.875rem; /* Ajustez la taille de la police si nécessaire */
     box-shadow: 0 -2px 5px var(--body-color); /* Ombre pour un effet de profondeur */
+    transition: 0.5s;
   }
 }
 
