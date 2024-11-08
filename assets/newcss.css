@@ -1343,6 +1343,9 @@ img {
   }
 
 
+  .footer__link{
+    margin-bottom: 50px;
+  }
   
   .nav__toggle {
     font-size: 17px; /* Augmentez la taille de la police ici */
