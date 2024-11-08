@@ -968,16 +968,21 @@ img {
   width: 0.6rem;
   background-color: var(--scroll-bar-color);
   border-radius: 0.5rem;
+  transition: 0.5s
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--scroll-thumb-color);
   border-radius: 0.5rem;
+  transition: 0.5s
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--text-color-light);
+  transition: 0.5s
 }
+
+
 
 /*======================== Media Queries ======================*/
 
@@ -1378,6 +1383,6 @@ img {
   bottom: 0; /* Positionne le menu visible */
 }
 
-.nav__btns, .nav__close, .nav__icon, .nav__list, .nav__link, .nav__menu, .nav__toggle, .change-theme, .home__social, .home__social-icon{
+.nav__btns, .nav__close, .nav__icon, .nav__list, .nav__link, .nav__menu, .nav__toggle, .change-theme, .home__social, .home__social-icon {
   transition: 0.5s
 }
