@@ -6,7 +6,7 @@
  * MiSans Fonts are used under the MiSans Fonts Intellectual Property License Agreement from Xiaomi Inc.
  */
 
-@font-face {
+ @font-face {
   font-family: 'Mi Sans';
   src: url('./font/MiSans.ttf') format('truetype');
   font-weight: normal; /* ou bold selon la police */
@@ -528,12 +528,14 @@ img {
   display: flex;
   justify-content: center; /* Centre horizontalement */
   align-items: center; /* Centre verticalement */
+  margin-left: auto;
 }
 
 .about__buttons1 {
   display: flex;
   justify-content: center; /* Centre horizontalement */
   align-items: center; /* Centre verticalement */
+  margin-left: auto;
 }
 
 /*===================== SKILLS =========================*/
@@ -748,8 +750,14 @@ img {
   top: 1rem;
   right: 1rem;
   font-size: 1.5rem;
-  color: var(--first-color);
+  color: white;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.services__modal-close:hover { /* Correction ici */
+  color: var(--first-color);
+  transition: 0.3s;
 }
 
 .services__modal-icon {
