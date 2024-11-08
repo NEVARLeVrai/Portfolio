@@ -139,6 +139,7 @@ body.dark-theme {
 
 .change-theme:hover {
   color: var(--first-color);
+  transition: 0.5s
 }
 
 /*================= Base ===============*/
@@ -228,15 +229,18 @@ img {
 .nav__toggle {
   color: var(--title-color);
   font-weight: var(--font-medium);
+  transition: 0.5s
 }
 
 
 .nav__toggle {
   font-size: 1.1rem;
   cursor: pointer;
+  transition: 0.5s
 }
 .nav__toggle:hover {
   color: var(--first-color);
+  transition: 0.5s
 }
 
 
@@ -244,6 +248,7 @@ img {
 .nav__list {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  transition: 0.5s
 }
 
 .nav__link {
@@ -253,17 +258,26 @@ img {
   font-size: var(--small-font-size);
   color: var(--title-color);
   font-weight: var(--font-medium);
+  transition: 0.5s
 }
 
 .nav__link:hover {
   color: var(--first-color);
+  transition: 0.5s
+}
+
+.nav__close:hover {
+  color: var(--first-color);
+  transition: 0.5s
 }
 
 .nav__icon {
   font-size: 1.2rem;
+  transition: 0.5s
 }
 .nav__icon {
   font-size: 1.2rem;
+  transition: 0.5s
 }
 
 
@@ -1323,12 +1337,21 @@ img {
     transition: 0.5s;
   }
 
+
   
   .nav__toggle {
     font-size: 17px; /* Augmentez la taille de la police ici */
     transition: 0.5s;
   }
-  .nav__close,
+ 
+  .nav__close {
+    font-size: 30px;
+    display: flex; /* Assurez-vous que le conteneur utilise flexbox */
+    justify-content: right; /* Espace entre les éléments */
+    align-items: center; /* Centre verticalement les éléments */
+  }
+
+
   .nav__icon{
     font-size: 20px; /* Augmentez la taille de la police ici */
     transition: 0.5s;
@@ -1353,4 +1376,8 @@ img {
 /* Show Menu */
 .show-menu {
   bottom: 0; /* Positionne le menu visible */
+}
+
+.nav__btns, .nav__close, .nav__icon, .nav__list, .nav__link, .nav__menu, .nav__toggle, .change-theme, .home__social, .home__social-icon{
+  transition: 0.5s
 }
