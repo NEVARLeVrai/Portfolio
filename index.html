@@ -182,7 +182,7 @@
             class="button button--flex services__button"
           >
             CV
-            <i class="uil uil-arrow-right button__icon"></i>
+            <i class="fas fa-download button__icon"></i>
 
           
           </span>
@@ -978,6 +978,12 @@
             const subject = document.getElementById('subject').value;
             const message = document.getElementById('message').value;
         
+            // Vérifie si le nom ou le message est vide
+            if (!name || !message) {
+              alert("Veuillez remplir tous les champs."); // Alerte l'utilisateur
+              return; // Ne fait rien si l'un des champs est vide
+            }
+
             const email = 'daniels-soares67@hotmail.com';
             const body = `Nom: ${name}\n${message}`;
             const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
