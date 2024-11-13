@@ -218,7 +218,7 @@ img {
 }
 
 .nav {
-  max-width: 750px;
+  max-width: 880px;
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
@@ -289,7 +289,7 @@ img {
 
 @media screen and (max-width: 1300px) {
   .nav {
-    max-width: 740px;
+    max-width: 860px;
     height: 200px;
 
     transition: 0.3s /* Ajout de la transition */
@@ -314,7 +314,7 @@ img {
 
 @media screen and (max-width: 1100px) {
   .nav {
-    max-width: 710px;
+    max-width: 830px;
     transition: 0.3s /* Ajout de la transition */
   }
   .nav__toggle {
@@ -336,11 +336,10 @@ img {
 
 @media screen and (max-width: 900px) {
   .nav {
-    max-width: 690px;
+    max-width: 790px;
     transition: 0.3s /* Ajout de la transition */
   }
   .nav__toggle {
-    font-size: x-small; /* Réduction de la taille de la police */
     transition: font-size 0.3s ease; /* Ajout de la transition */
   }
 
@@ -355,6 +354,28 @@ img {
     transition: font-size 0.3s ease; /* Ajout de la transition */
   }
 }
+
+@media screen and (max-width: 820px) {
+  .nav {
+    max-width: 710px;
+    transition: 0.3s /* Ajout de la transition */
+  }
+  .nav__toggle {
+    transition: font-size 0.3s ease; /* Ajout de la transition */
+  }
+
+  .nav__link {
+    font-size: 10px; /* Réduction de la taille de la police */
+    transition: font-size 0.3s ease; /* Ajout de la transition */
+    margin: 5px 0; /* Ajout d'une marge pour espacer les liens */
+  }
+
+  .nav__icon {
+    font-size: 0.9rem; /* Réduction de la taille de l'icône */
+    transition: font-size 0.3s ease; /* Ajout de la transition */
+  }
+}
+
 
 
 /* Active Link */
@@ -1002,7 +1023,10 @@ img {
 @media screen and (max-width: 600px) {
   .nav{
     margin-bottom: 20px;
+
   }
+
+
 }
 
 /* For Small Devices */
@@ -1304,7 +1328,6 @@ img {
 /* For large devices */
 
 @media screen and (min-width: 968px) {
-  
   
   .header,
   .main,
