@@ -126,9 +126,10 @@ body.dark-theme {
 
 .button.button--flex {
   display: flex;
-  justify-content: center; /* Ajout pour centrer horizontalement */
+  justify-content: center; /* Centre horizontalement */
   align-items: center; /* Centre verticalement */
-  margin-right: 20px; /* Gardez cette marge si nécessaire */
+  margin-left: auto;
+  margin-right: auto;
 }
 .change-theme {
   font-size: 1.25rem;
@@ -218,7 +219,7 @@ img {
 }
 
 .nav {
-  max-width: 880px;
+  max-width: 875px;
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
@@ -1240,7 +1241,7 @@ img {
   }
 
   .about__description {
-    text-align: initial;
+    text-align: center;
     transition: 0.3s /* Ajout de la transition */
   }
   .about__info {
