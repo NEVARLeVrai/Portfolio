@@ -555,13 +555,31 @@ img {
   justify-content: center; /* Centre horizontalement */
   align-items: center; /* Centre verticalement */
   margin-left: auto;
+  margin-right: auto;
 }
 
 .about__buttons1 {
   display: flex;
   justify-content: center; /* Centre horizontalement */
   align-items: center; /* Centre verticalement */
+  text-align: center;
+}
+
+.about__buttons2 {
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  text-align: center;
+  margin-left: 10px
+}
+
+.about__buttons3 {
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  text-align: center;
   margin-left: auto;
+  margin-right: auto;
 }
 
 /*===================== SKILLS =========================*/
