@@ -558,7 +558,7 @@ img {
   margin-right: auto;
 }
 
-iframe.fournil {
+iframe.gdrive {
   width: 500px;
   height: 300px;
   margin-right: auto;
@@ -1130,6 +1130,8 @@ iframe.fournil {
   .nav{
     margin-bottom: 20px;
   }
+
+
   
   .home__content {
     grid-template-columns: max-content 1fr 1fr;
@@ -1165,6 +1167,8 @@ iframe.fournil {
   }
   
 }
+
+
 
 @media screen and (min-width: 768px) {
 
@@ -1405,6 +1409,14 @@ iframe.fournil {
     transition: 0.3s;
   }
 
+  iframe.gdrive {
+    width: 450px;
+    height: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    border-color: transparent;
+    border-radius: 10px;
+  }
 
   .footer__link{
     margin-bottom: 50px;
