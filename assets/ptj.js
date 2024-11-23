@@ -171,6 +171,13 @@ if (!selectedTheme) {
   themeButton.classList[selectedIcon === "uil-sun" ? "add" : "remove"](iconTheme);
 }
 
+// Ajout d'une vérification pour s'assurer que l'icône est correctement définie
+if (selectedTheme === "dark" && selectedIcon !== iconTheme) {
+  themeButton.classList.add(iconTheme); // Assurez-vous que l'icône est correcte
+} else if (selectedTheme === "light" && selectedIcon === iconTheme) {
+  themeButton.classList.remove(iconTheme); // Assurez-vous que l'icône est correcte
+}
+
 // Activer / désactiver le thème manuellement avec le bouton
 themeButton.addEventListener("click", () => {
   // Ajouter ou retirer le thème sombre / icône
