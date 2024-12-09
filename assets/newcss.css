@@ -1,4 +1,3 @@
-
 /*================ VARIABLES CSS ==========*/
 
 /* 
@@ -852,6 +851,12 @@ iframe.gdrive {
 .portfolio__button:hover .button__icon {
   transform: translateX(0.25rem);
 }
+
+.bas__button:hover .button__icon {
+  transform: translateY(0.25rem);
+}
+
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
   content: "";
