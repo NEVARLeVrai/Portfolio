@@ -1,19 +1,30 @@
+window.addEventListener('load', () => {
+  setTimeout(() => {
+      const loader = document.getElementById('loader-wrapper');
+      loader.classList.add('loader-hidden');
+      loader.addEventListener('transitionend', () => {
+          loader.style.display = 'none';
+      });
+  }, 0);
+});
+
 const navMenu = document.getElementById("nav-menu"),
-  navToggle = document.getElementById("nav-toggle");
+navToggle = document.getElementById("nav-toggle");
 navClose = document.getElementById("nav-close");
 if (navToggle) {
-  navToggle.addEventListener("click", () => {
-    navMenu.classList.add("show-menu");
-  });
+navToggle.addEventListener("click", () => {
+  navMenu.classList.add("show-menu");
+});
 }
 
 if (navClose) {
-  navClose.addEventListener("click", () => {
-    navMenu.classList.remove("show-menu");
-  });
+navClose.addEventListener("click", () => {
+  navMenu.classList.remove("show-menu");
+});
 } else {
-  console.error("L'élément nav-close n'existe pas.");
+console.error("L'élément nav-close n'existe pas.");
 }
+
 
 /*==================== RETIRER LE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll(".nav__link");
@@ -44,25 +55,6 @@ function toggleSkills() {
 skillsHeader.forEach((el) => {
   el.addEventListener("click", toggleSkills);
 });
-
-/*============== Qualifications des compétences ===============*/
-
-/*const tabs = document.querySelectorAll('[data-target]'),
-      tabContents = document.querySelectorAll('[data-content]')
-tabs.forEach(tab =>{
-    tab.addEventListener('click', () =>{
-        const target = document.querySelector(tab.dataset.target)
-        tabContents.forEach(tabContent =>{
-            tabContent.classList.remove('qualification__active')
-        })
-        target.classList.add('qualification__active')
-        tab.forEach(tab =>{
-            tab.classList.remove('qualification__active')
-        })
-        tab.classList.add('qualification__active')
-    })
-})      
-*/
 
 /*======================= Modal des services ===================*/
 const modalViews = document.querySelectorAll(".services__modal"),
