@@ -136,8 +136,7 @@ body.dark-theme {
 }
 .change-theme {
   font-size: 1.25rem;
-  color: var(--title-color);
- transition: 0.3s;
+  transition: 0.3s;
   cursor: pointer;
 }
 
@@ -421,7 +420,46 @@ img {
 
 
 /*========HOME=============*/
-/* Styles pour la vidéo en arrière-plan */
+
+/* Animation de fade au défilement */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Cette classe sera ajoutée/supprimée via JavaScript */
+.fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+
+/* Styles pour la navigation dans la section home */
+.force-dark .nav__link:not(.active),
+.force-dark .nav__toggle,
+.force-dark .nav__close,
+.force-dark .change-theme,
+.force-dark .home__subtitle {  /* Ajout du sous-titre */
+  color: #fff !important;
+}
+
+/* Le titre garde sa couleur originale */
+.home__title {
+  color: var(--first-color);
+}
+
+.force-dark .nav__link:hover,
+.force-dark .nav__toggle:hover,
+.force-dark .nav__close:hover,
+.force-dark .change-theme:hover {
+  color: var(--first-color) !important;
+}
+
+
+
 .home__video-container {
   position: absolute;
   top: 0;
