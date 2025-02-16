@@ -1025,26 +1025,53 @@ iframe.gdrive {
   row-gap: 2rem;
 }
 
+.contact__info {
+  display: grid;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .contact__information {
+  background: var(--container-color);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  width: 100%;
   display: flex;
-  margin-bottom: var(--mb-2);
+  gap: 1.5rem;
+  align-items: center;
+  min-height: 80px;
 }
 
 .contact__icon {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--first-color);
-  margin-right: var(--mb-0-75);
 }
 
 .contact__title {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
+  margin-bottom: var(--mb-0-25);
 }
 
 .contact__subtitle {
   font-size: var(--small-font-size);
   color: var(--text-color-light);
 }
+
+@media screen and (max-width: 768px) {
+  .contact__information {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .contact__info {
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+}
+
 .contact__content {
   background-color: var(--input-color);
   border-radius: 0.5rem;
@@ -1055,16 +1082,71 @@ iframe.gdrive {
   color: var(--title-color);
 }
 
+.contact__form {
+  display: grid;
+  row-gap: 0.75rem;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+.contact__inputs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+.contact__content {
+  position: relative;
+  background: var(--container-color);
+  border-radius: .5rem;
+  padding: 0.75rem;
+  min-height: 30px;
+  height: auto;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.contact__label {
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.contact__input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.contact__input-icon {
+  font-size: 1.1rem;
+  color: var(--first-color);
+  opacity: 0.7;
+  position: absolute;
+  left: 0.25rem;
+}
+
 .contact__input {
   width: 100%;
-  background-color: var(--input-color);
+  background: none;
   color: var(--text-color);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   border: none;
   outline: none;
-  padding: 0.25rem 0.5rem 0.5rem 0;
+  padding-left: 1.75rem;
 }
+
+textarea.contact__input {
+  height: 150px;
+  resize: none;
+}
+
+
+.contact__content:focus-within {
+  border-color: var(--first-color);
+}
+
 
 /*=================== Footer ==================*/
 

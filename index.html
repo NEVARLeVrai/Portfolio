@@ -1093,58 +1093,62 @@
 
     <!--===================== Contact Me =====================-->
     <section class="contact section" id="Me-Contacter">
-      <br><br>
-      <h2 class="section__title">Contact</h2>
-      <span class="section__subtitle">Me contacter</span>
+      <h2 class="section__title">Contactez-moi par email</h2>
+      <span class="section__subtitle">N'hésitez pas à me contacter pour plus d'informations par email</span>
 
-      <div class="contact__container container grid">
-        <div>
+      <div class="container grid">
+        <div class="contact__info">
           <div class="contact__information">
             <i class="uil uil-envelope-minus contact__icon"></i>
-
             <div>
               <h3 class="contact__title">Email</h3>
-              <span class="contact__subtitle"
-                >daniels-soares67@hotmail.com</span
-              >
+              <span class="contact__subtitle">daniels-soares67@hotmail.com</span>
             </div>
           </div>
 
           <div class="contact__information">
             <i class="uil uil-map-marker contact__icon"></i>
-
             <div>
               <h3 class="contact__title">Localisation</h3>
-              <span class="contact__subtitle"
-                >Alsace, France</span
-              >
+              <span class="contact__subtitle">Alsace, France</span>
             </div>
           </div>
         </div>
+
         <form action="" class="contact__form grid">
           <div class="contact__inputs grid">
             <div class="contact__content">
-              <label for="name" class="content__label">Nom</label>
-              <input type="text" class="contact__input" id="name" />
+              <label for="firstname" class="contact__label">Prénom</label>
+              <div class="contact__input-wrapper">
+                <i class="uil uil-user contact__input-icon"></i>
+                <input type="text" class="contact__input" id="firstname" required />
+              </div>
             </div>
-        
+
             <div class="contact__content">
-              <label for="subject" class="content__label">Sujet</label>
-              <input type="text" class="contact__input" id="subject" />
+              <label for="lastname" class="contact__label">Nom</label>
+              <div class="contact__input-wrapper">
+                <i class="uil uil-user contact__input-icon"></i>
+                <input type="text" class="contact__input" id="lastname" required />
+              </div>
+            </div>
+
+            <div class="contact__content">
+              <label for="subject" class="contact__label">Sujet</label>
+              <div class="contact__input-wrapper">
+                <i class="uil uil-file-alt contact__input-icon"></i>
+                <input type="text" class="contact__input" id="subject" required />
+              </div>
             </div>
           </div>
-        
+
           <div class="contact__content">
-            <label for="message" class="content__label">Message</label>
-            <textarea
-              name="message"
-              id="message"
-              cols="0"
-              rows="7"
-              class="contact__input"
-            ></textarea>
+            <label for="message" class="contact__label">Message</label>
+            <div class="contact__input-wrapper">
+              <i class="uil uil-message contact__input-icon"></i>
+              <textarea name="message" id="message" cols="0" rows="7" class="contact__input" required></textarea>
+            </div>
           </div>
-        
           <div>
             <a
               href="#"
@@ -1155,26 +1159,28 @@
               <i class="uil uil-message button__icon"></i>
             </a>
           </div>
+
         </form>
         
         <script>
           document.getElementById('sendEmail').addEventListener('click', function(event) {
-            event.preventDefault(); // Empêche le comportement par défaut du lien
-            const name = document.getElementById('name').value;
+            event.preventDefault();
+            const firstname = document.getElementById('firstname').value;
+            const lastname = document.getElementById('lastname').value;
             const subject = document.getElementById('subject').value;
             const message = document.getElementById('message').value;
         
-            // Vérifie si le nom ou le message est vide
-            if (!name || !message) {
-              alert("Veuillez remplir tous les champs."); // Alerte l'utilisateur
-              return; // Ne fait rien si l'un des champs est vide
+            if (!firstname || !lastname || !subject || !message) {
+              alert("Please fill in all fields.");
+              return;
             }
 
+            const name = `${firstname} ${lastname}`;
             const email = 'daniels-soares67@hotmail.com';
-            const body = `Nom: ${name}\n${message}`;
-            const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            const formattedSubject = `${subject} - From: ${name}`;
+            const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(formattedSubject)}&body=${encodeURIComponent(message)}`;
         
-            window.location.href = mailtoLink; // Ouvre le client de messagerie
+            window.location.href = mailtoLink;
           });
         </script>
       </div>
