@@ -1719,25 +1719,53 @@ textarea.contact__input {
   transform: scale(0.95);
 }
 
-.typing {
+
+
+.highlight {
+  color: var(--first-color);
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+.typing, .typing-2, .typing-3 {
   display: inline-block;
   width: 0;
-  border-right: 2px solid var(--first-color);
-  white-space: nowrap;
   overflow: hidden;
   opacity: 0;
+}
+
+.typing {
+  white-space: nowrap;
+  border-right: 2px solid var(--first-color);
+}
+
+.typing-2 {
+  white-space: pre-line;
+  border-right: 1px solid var(--first-color);
 }
 
 .typing.start-typing {
   animation: 
     fadeIn 0.5s ease forwards,
-    typing 3.5s steps(40, end) forwards 0.5s,
-    blink .75s step-end infinite 0.5s;
+    typing 2s steps(30, end) forwards,
+    blink .75s step-end 5 forwards;
 }
 
-.highlight {
-  color: var(--first-color);
+.typing-2.start-typing {
+  animation: 
+    fadeIn 0.5s ease forwards,
+    typing 3s steps(50, end) forwards,
+    blink .75s step-end 5 forwards;
 }
+
 
 @keyframes typing {
   from { width: 0 }

@@ -5,6 +5,7 @@ window.addEventListener('load', () => {
       loader.addEventListener('transitionend', () => {
           loader.style.display = 'none';
           document.querySelector('.typing').classList.add('start-typing');
+          document.querySelector('.typing-2').classList.add('start-typing');
       });
   }, 0);
 });
