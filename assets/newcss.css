@@ -1718,3 +1718,35 @@ textarea.contact__input {
   opacity: 0;
   transform: scale(0.95);
 }
+
+.typing {
+  display: inline-block;
+  width: 0;
+  border-right: 2px solid var(--first-color);
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+  animation: 
+    fadeIn 0.5s ease forwards 0.8s,
+    typing 3.5s steps(40, end) forwards 1.3s,
+    blink .75s step-end infinite 1.3s;
+}
+
+.highlight {
+  color: var(--first-color);
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: var(--first-color) }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
