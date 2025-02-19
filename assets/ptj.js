@@ -4,6 +4,7 @@ window.addEventListener('load', () => {
       loader.classList.add('loader-hidden');
       loader.addEventListener('transitionend', () => {
           loader.style.display = 'none';
+          document.querySelector('.typing').classList.add('start-typing');
       });
   }, 0);
 });

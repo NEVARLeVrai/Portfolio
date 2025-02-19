@@ -1726,10 +1726,13 @@ textarea.contact__input {
   white-space: nowrap;
   overflow: hidden;
   opacity: 0;
+}
+
+.typing.start-typing {
   animation: 
-    fadeIn 0.5s ease forwards 0.8s,
-    typing 3.5s steps(40, end) forwards 1.3s,
-    blink .75s step-end infinite 1.3s;
+    fadeIn 0.5s ease forwards,
+    typing 3.5s steps(40, end) forwards 0.5s,
+    blink .75s step-end infinite 0.5s;
 }
 
 .highlight {
