@@ -1735,7 +1735,8 @@ textarea.contact__input {
   to { opacity: 1 }
 }
 
-.typing, .typing-2, .typing-3 {
+
+.typing, .typing-2 {
   display: inline-block;
   width: 0;
   overflow: hidden;
@@ -1754,18 +1755,17 @@ textarea.contact__input {
 
 .typing.start-typing {
   animation: 
-    fadeIn 0.5s ease forwards,
-    typing 2s steps(30, end) forwards,
-    blink .75s step-end 5 forwards;
+    fadeIn 0.5s ease-in-out forwards,
+    typing 3s steps(30, end) forwards,
+    blink .75s step-end 6 forwards;
 }
 
 .typing-2.start-typing {
   animation: 
-    fadeIn 0.5s ease forwards,
-    typing 3s steps(50, end) forwards,
-    blink .75s step-end 5 forwards;
+    fadeIn 0.5s ease-in-out forwards,
+    typing 2s steps(50, end) forwards,
+    blink .75s step-end 6 forwards;
 }
-
 
 @keyframes typing {
   from { width: 0 }
