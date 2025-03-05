@@ -8,6 +8,13 @@ window.addEventListener('load', () => {
           document.querySelector('.typing-2').classList.add('start-typing');
       });
   }, 0);
+
+  // Charger le GIF indépendamment
+  const img = new Image();
+  img.src = 'assets/img/MatrixRainCodes.gif';
+  img.onload = () => {
+    document.querySelector('.home__background-video').src = img.src;
+  };
 });
 
 const navMenu = document.getElementById("nav-menu"),
