@@ -1787,10 +1787,9 @@ textarea.contact__input {
 
 .realisations__content {
   position: relative;
-  background-color: var(--container-color);
+  background-color: transparent;
   padding: 1.5rem;
   border-radius: 0.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1853,8 +1852,5 @@ textarea.contact__input {
   right: 1rem;
   z-index: 2;
   margin: 0;
-  padding: 0.5rem 1rem;
-  background-color: var(--container-color);
   border-radius: 0.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
