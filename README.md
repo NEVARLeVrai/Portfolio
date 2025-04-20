@@ -1,19 +1,55 @@
-![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif) Bienvenue sur mon Portfolio 👨‍💻 !
-=============================================================================================================================
-## Visiter le site ICI
+# Welcome to My Portfolio 👨‍💻
+![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif)
 
+## 🌐 Live Demo
 [daniels-soares67-portfolio.vercel.app](https://daniels-soares67-portfolio.vercel.app/)
 
-## Description
+## 📝 Description
+This repository contains the source code and files for my personal portfolio website. Built with modern web technologies, the site showcases my skills, projects, and professional journey as a web developer and digital creator.
 
-Ce dépôt contient le code source et les fichiers de mon site web de portfolio personnel. Le site est développé en utilisant HTML, CSS et JavaScript.
-Le site web de portfolio personnel met en avant mes compétences, mes projets et mes expériences en tant que développeur web. Il sert de plateforme en ligne pour mettre en lumière mon travail et fournir des informations sur mon parcours et mon expertise.
+## 🚀 Features
+- **Responsive Design**: Fully responsive layout that works seamlessly across all devices
+- **Dark/Light Mode**: Toggle between dark and light themes for optimal viewing experience
+- **Interactive UI**: Smooth animations and transitions for an engaging user experience
+- **Project Showcase**: Detailed presentation of my work with live demos and source code links
+- **Contact Form**: Easy-to-use contact form for direct communication
 
-## Fonctionnalités
+## 🛠️ Tech Stack
+- **Frontend**: HTML5, CSS3, JavaScript
+- **UI Components**: Unicons, Swiper.js
+- **Deployment**: Vercel
+- **Version Control**: Git, GitHub
 
-- **Accueil** : Une introduction personnelle qui offre un aperçu de mes compétences et de mes intérêts.
-- **À propos** : Détails sur mon parcours professionnel, ma formation et mon expérience pertinente.
-- **Projets** : Présentation des projets sur lesquels j'ai travaillé, avec des descriptions, des captures d'écran et des liens vers des démos en direct ou des dépôts.
-- **Compétences** : Liste des langages de programmation, frameworks et outils que je maîtrise.
-- **Contact** : Différentes manières de me joindre, notamment par e-mail, sur les réseaux sociaux ou via un formulaire de contact.
+## 📋 Sections
+1. **Home**: Personal introduction and quick overview of my skills
+2. **About**: Professional background, education, and experience
+3. **Skills**: Technical competencies in:
+   - Programming Languages (HTML/CSS, JavaScript, PHP, C#, Python)
+   - Development Tools (VS Code, Git, GitHub)
+   - Design Software (Adobe Photoshop, Illustrator, Figma)
+4. **Education**: Academic journey and certifications
+5. **Experience**: Professional work experience and internships
+6. **Projects**: Portfolio of completed projects with:
+   - Live demos
+   - Source code links
+   - Project descriptions
+7. **Contact**: Multiple ways to get in touch
+
+## 🔧 Installation
+1. Clone the repository:
+```bash
+git clone https://github.com/NEVARLeVrai/Portfolio.git
+```
+2. Open `index.html` in your browser
+
+## 📄 License
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Connect with Me
+- GitHub: [@NEVARLeVrai](https://github.com/NEVARLeVrai)
+- LinkedIn: [Daniels Soares](https://www.linkedin.com/in/daniels-soares67/)
+- Email: daniels-soares67@hotmail.com
+
+---
+Made with ❤️ by Daniels Soares
 
