@@ -1065,17 +1065,6 @@ iframe.gdrive {
   color: var(--text-color-light);
 }
 
-@media screen and (max-width: 768px) {
-  .contact__information {
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  .contact__info {
-    padding: 0 1rem;
-    max-width: 100%;
-  }
-}
 
 .contact__content {
   background-color: var(--input-color);
