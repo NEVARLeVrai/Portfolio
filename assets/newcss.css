@@ -1795,3 +1795,77 @@ textarea.contact__input {
   from { opacity: 0 }
   to { opacity: 1 }
 }
+
+.realisations__content {
+  position: relative;
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  min-height: 200px;
+}
+
+.realisations__card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.realisations__card-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.15;
+  transition: opacity 0.3s ease;
+  border-radius: 0.5rem;
+}
+
+.realisations__card:hover .realisations__card-bg {
+  opacity: 0.4;
+}
+
+.realisations__card > div {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.realisations__icon {
+  font-size: 1.75rem;
+  color: var(--first-color);
+  margin-bottom: 0.75rem;
+}
+
+.realisations__title {
+  font-size: var(--h3-font-size);
+  margin: 0;
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.realisations__content .button--link {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 2;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  background-color: var(--container-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
