@@ -32,42 +32,42 @@
           <ul class="nav__list grid">
             <li class="nav__item">
               <a href="#Accueil" class="nav__link active-link">
-                <i class="uil uil-estate nav__icon"></i>Accueil
+                <i class="uil uil-estate nav__icon"></i><span data-translate="nav-home">Accueil</span>
               </a>
             </li>
             <li class="nav__item">
               <a href="#À-propos" class="nav__link">
-                <i class="uil uil-user nav__icon"></i>À propos
+                <i class="uil uil-user nav__icon"></i><span data-translate="nav-about">À propos</span>
               </a>
             </li>
             <li class="nav__item">
               <a href="#Compétences" class="nav__link">
-                <i class="uil uil-file-alt nav__icon"></i>Compétences
+                <i class="uil uil-file-alt nav__icon"></i><span data-translate="nav-skills">Compétences</span>
               </a>
             </li>
             <li class="nav__item">
               <a href="#Formations" class="nav__link">
-                <i class="uil uil-briefcase-alt nav__icon"></i>Formations
+                <i class="uil uil-briefcase-alt nav__icon"></i><span data-translate="nav-education">Formations</span>
               </a>
             </li>
             <li class="nav__item">
               <a href="#Expériences" class="nav__link">
-                <i class="uil uil-graduation-cap nav__icon"></i>Expériences
+                <i class="uil uil-graduation-cap nav__icon"></i><span data-translate="nav-experience">Expériences</span>
               </a>
             </li>
             <li class="nav__item">
               <a href="#Certifications" class="nav__link">
-                <i class="uil uil-award nav__icon"></i>Certifications
+                <i class="uil uil-award nav__icon"></i><span data-translate="nav-certifications">Certifications</span>
               </a>
             </li>
             <li class="nav__item">
               <a href="#Projets" class="nav__link">
-                <i class="uil uil-scenery nav__icon"></i>Projets
+                <i class="uil uil-scenery nav__icon"></i><span data-translate="nav-projects">Projets</span>
               </a>
             </li>
             <li class="nav__item">
               <a href="#Me-Contacter" class="nav__link">
-                <i class="uil uil-message nav__icon"></i>Me Contacter
+                <i class="uil uil-message nav__icon"></i><span data-translate="nav-contact">Me Contacter</span>
               </a>
             </li>
           </ul>
@@ -76,6 +76,16 @@
         <div class="nav__btns">
           <!-- Bouton de changement de thème -->
           <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+          <!-- Bouton de changement de langue -->
+          <div class="language-selector-container">
+            <i class="uil uil-globe" id="language-button"></i>
+            <div class="language-options" id="language-options">
+              <a href="#" class="language-option" data-lang="fr">FR</a>
+              <a href="#" class="language-option" data-lang="en">EN</a>
+              <a href="#" class="language-option" data-lang="de">DE</a>
+              <a href="#" class="language-option" data-lang="es">ES</a>
+            </div>
           </div>
         </div>
 
@@ -88,14 +98,14 @@
 
     <main class="main">
       <div id="loader-wrapper">
-        <img src="assets/img/profile.webp" id="loader-logo" alt="Logo">
+        <img src="assets/img/profile.webp" id="loader-logo" alt="Logo" data-translate="alt-logo">
     </div>
       <!--========================= Accueil =====================-->
 
 
       <section class="home section" id="Accueil">
         <div class="home__video-container">
-          <img class="home__background-video" src="assets/img/MatrixRainCodes.gif" alt="Matrix Rain">
+          <img class="home__background-video" src="assets/img/MatrixRainCodes.gif" alt="Matrix Rain" data-translate="alt-matrix-rain">
           <div class="home__overlay"></div>
         </div>
 
@@ -152,25 +162,25 @@
             </div>
             <div class="home__data">
               <h1 class="home__title">
-                Hey, Je suis <br><span class="highlight">Daniels Soares</span>
+                <span data-translate="home-title">Hey, Je suis</span> <br><span class="highlight">Daniels Soares</span>
               </h1>
               <br>
               
               <h3 class="home__subtitle">
-                <span class="typing">Développeur Full Stack<br>Créatif & Autodidacte</span>
+                <span class="typing" data-translate="home-subtitle">Développeur Full Stack<br>Créatif & Autodidacte</span>
               </h3>
               
               <p class="home__description">
-                <span class="typing-2">Passionné par le développement web, d'applications et le design graphique, je suis actuellement en BTS SIO SLAM au Lycée René Cassin.</span>
+                <span class="typing-2" data-translate="home-description">Passionné par le développement web, d'applications et le design graphique, je suis actuellement en BTS SIO SLAM au Lycée René Cassin.</span>
               </p>
               
               <div class="home__buttons">
                 <a href="#Me-Contacter" class="button button--flex button--small portfolio__button">
-                  Me Contacter <i class="uil uil-message button__icon"></i>
+                  <span data-translate="home-contact-btn">Me Contacter</span> <i class="uil uil-message button__icon"></i>
                 </a>
                 
                 <a href="#Projets" class="button button--flex button--small portfolio__button">
-                  Mes Projets <i class="uil uil-arrow-right button__icon"></i>
+                  <span data-translate="home-projects-btn">Mes Projets</span> <i class="uil uil-arrow-right button__icon"></i>
                 </a>
               </div>
             </div>
@@ -179,7 +189,7 @@
           <div class="home__scroll">
             <a href="#À-propos" class="home__scroll-button button--flex">
               <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-              <span class="home__scroll-name">Scrollez vers le bas</span>
+              <span class="home__scroll-name" data-translate="home-scroll">Scrollez vers le bas</span>
               <i class="uil uil-arrow-down home__scroll-arrow"></i>
             </a>
           </div>
@@ -192,45 +202,37 @@
 
       <section class="about section" id="À-propos">
         <br><br>
-        <h2 class="section__title">À propos</h2>
-        <span class="section__subtitle">Mon introduction</span>
+        <h2 class="section__title" data-translate="about-title">À propos</h2>
+        <span class="section__subtitle" data-translate="about-subtitle">Mon introduction</span>
 
         <div class="about__container container grid">
-          <img src="assets\img\about.webp" alt="" class="about__img" />
+          <img src="assets\img\about.webp" alt="À propos de moi" class="about__img" data-translate="alt-about" />
 
           <div class="about__data">
-            <p class="about__description">
+            <p class="about__description" data-translate="about-description">
               Passionné par l'informatique, les jeux vidéo et le graphisme, je me spécialise dans le développement web et le design graphique. Mon objectif est de valoriser mes compétences techniques et créatives au service des entreprises, en les accompagnant dans leurs projets numériques.
               Motivé, autonome et curieux, j'ai à cœur de m'investir pleinement au sein d'une équipe. Je suis disponible pour une alternance dès juin, juillet ou août 2025, au rythme d'une semaine en formation / une semaine en entreprise.
             </p>
 
             <div class="about__info">
-
-
               <div>
                 <span class="about__info-title">6</span>
-                <span class="about__info-name"
-                  >
-                  Projets</span
-                >
+                <span class="about__info-name" data-translate="about-projects">Projets</span>
               </div>
 
               <div>
                 <span class="about__info-title">1</span>
-                <span class="about__info-name">an <br />d'experience</span>
+                <span class="about__info-name" data-translate="about-experience">an <br />d'experience</span>
               </div>
             </div>
 
             
 
             
-            <span
-            class="button button--flex services__button "
-          >
-            CV
-            <i class="uil uil-arrow-right button__icon"></i>
-          
-          </span>
+            <span class="button button--flex services__button">
+              <span data-translate="about-cv">CV</span>
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
 
 
 
@@ -238,92 +240,67 @@
           <div class="services__modal">
             <div class="services__modal-content">
               <i class="uil uil-times services__modal-close"></i>
-              <h4 class="services__modal-title">Vous serez redirigé</h4>
-              <h4 class="services__modal-cotent">&#128680 Tout est stocké sur mon GDrive</h4>
+              <h4 class="services__modal-title" data-translate="modal-redirect">Vous serez redirigé</h4>
+              <h4 class="services__modal-cotent">&#128680 <span data-translate="gdrive-cv">Tout est stocké sur mon GDrive</span></h4>
               <br>
               <ul class="services__modal-services grid">
                 <li class="services__modal-service">
                   <div class="about__buttons3">
-                    <!-- Contenu supplémentaire peut être ajouté ici -->
-
-                  <a href="https://drive.google.com/file/d/1glNtnyar1Ll7NDn7uW5zG9CCCmBWKrn5/view?usp=sharing" class="button button--flex bas__button" target="_blank">
-                    Le visualiser        <i class="  uil uil-cloud-download button__icon"></i>
-
-                  </a>
+                    <a href="https://drive.google.com/file/d/1glNtnyar1Ll7NDn7uW5zG9CCCmBWKrn5/view?usp=sharing" class="button button--flex bas__button" target="_blank">
+                      <span data-translate="modal-view">Le visualiser</span> <i class="uil uil-cloud-download button__icon"></i>
+                    </a>
+                  </div>
                 </li>
               </ul>
             </div>
           </div>
 
-          <span
-          class="button button--flex services__button "
-        >
+          <span class="button button--flex services__button">
+            <span data-translate="about-motivation">Lettre de motivation</span>
+            <i class="uil uil-arrow-right button__icon"></i>
+          </span>
   
-          Lettre de motivation
-  
-          <i class="uil uil-arrow-right button__icon"></i>
-        </span>
-  
-  
-        <div class="services__modal">
-          <div class="services__modal-content">
-            <i class="uil uil-times services__modal-close"></i>
-            <h4 class="services__modal-title">Vous serez redirigé</h4>
-            <h4 class="services__modal-cotent">&#128680 La lettre de motivation est disponible sur mon GDrive</h4>
-            <br>
-            <ul class="services__modal-services grid">
-              <li class="services__modal-service">
-                <div class="about__buttons3">
-                  <!-- Contenu supplémentaire peut être ajouté ici -->
-  
-                <a href="https://drive.google.com/file/d/10GcoNdBIFjeB7ScVEzFK0EVZc8s8MoBz/view?usp=sharing" class="button button--flex" target="_blank">
-                  Le visualiser          <i class="uil uil-cloud-download button__icon"></i>
-  
-                </a>
-              </li>
-            </ul>
+          <div class="services__modal">
+            <div class="services__modal-content">
+              <i class="uil uil-times services__modal-close"></i>
+              <h4 class="services__modal-title" data-translate="modal-redirect">Vous serez redirigé</h4>
+              <h4 class="services__modal-cotent">&#128680 <span data-translate="gdrive-motivation">La lettre de motivation est disponible sur mon GDrive</span></h4>
+              <br>
+              <ul class="services__modal-services grid">
+                <li class="services__modal-service">
+                  <div class="about__buttons3">
+                    <a href="https://drive.google.com/file/d/10GcoNdBIFjeB7ScVEzFK0EVZc8s8MoBz/view?usp=sharing" class="button button--flex" target="_blank">
+                      <span data-translate="modal-view">Le visualiser</span> <i class="uil uil-cloud-download button__icon"></i>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
 
-
-          <span
-          class="button button--flex services__button "
-        >
-
-          Veille technologique
-
-          <i class="uil uil-arrow-right button__icon"></i>
-        </span>
+          <span class="button button--flex services__button">
+            <span data-translate="about-veille">Veille technologique</span>
+            <i class="uil uil-arrow-right button__icon"></i>
+          </span>
   
-
-
-
-        
-        <div class="services__modal">
-          <div class="services__modal-content">
-            <i class="uil uil-times services__modal-close"></i>
-            <h4 class="services__modal-title">Vous serez redirigé</h4>
-            <h4 class="services__modal-cotent">&#128680 La veille technologique est disponible sur mon GDrive</h4>
-            <br>
-            <ul class="services__modal-services grid">
-              <li class="services__modal-service">
-                <div class="about__buttons3">
-                  <!-- Contenu supplémentaire peut être ajouté ici -->
-
-                <a href="https://drive.google.com/file/d/1RZSuJx9DyEZmzeQNfYNel65R6d3TRfhl/view?usp=sharing" class="button button--flex" target="_blank">
-                  Le visualiser          <i class="uil uil-cloud-download button__icon"></i>
-
-                </a>
-              </li>
-            </ul>
+          <div class="services__modal">
+            <div class="services__modal-content">
+              <i class="uil uil-times services__modal-close"></i>
+              <h4 class="services__modal-title" data-translate="modal-redirect">Vous serez redirigé</h4>
+              <h4 class="services__modal-cotent">&#128680 <span data-translate="gdrive-veille">La veille technologique est disponible sur mon GDrive</span></h4>
+              <br>
+              <ul class="services__modal-services grid">
+                <li class="services__modal-service">
+                  <div class="about__buttons3">
+                    <a href="https://drive.google.com/file/d/1RZSuJx9DyEZmzeQNfYNel65R6d3TRfhl/view?usp=sharing" class="button button--flex" target="_blank">
+                      <span data-translate="modal-view">Le visualiser</span> <i class="uil uil-cloud-download button__icon"></i>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
 
-
-
-
-
-          
           </div>
         </div>
         <br><br>      <br><br>
@@ -331,35 +308,27 @@
       <!--==================== Ce que je peux réaliser ====================-->
         <section class="services section" id="Réalisations">
           <br><br>
-          <h2 class="section__title">Ce que je peux réaliser</h2>
-          <span class="section__subtitle">Mes domaines de création</span>
+          <h2 class="section__title" data-translate="realisations-title">Ce que je peux réaliser</h2>
+          <span class="section__subtitle" data-translate="realisations-subtitle">Mes domaines de création</span>
 
           <div class="realisations__container container grid">
             <!-- Développement -->
             <div class="realisations__content">
               <div class="realisations__card">
-                <img src="assets/img/digital.webp" alt="Développement" class="realisations__card-bg services__button button--link">
+                <img src="assets/img/digital.webp" alt="Développement" class="realisations__card-bg services__button button--link" data-translate="alt-dev">
                 <div>
                   <i class="uil uil-code-branch realisations__icon"></i>
-                  <h3 class="realisations__title">Développement<br>Digital</h3>
+                  <h3 class="realisations__title" data-translate="dev-title">Développement<br>Digital</h3>
                 </div>
               </div>
               <div class="services__modal">
                 <div class="services__modal-content">
-                  <h4 class="services__modal-title">Développement Digital</h4>
+                  <h4 class="services__modal-title" data-translate="dev-title">Développement Digital</h4>
                   <i class="uil uil-times services__modal-close"></i>
                   <ul class="services__modal-services grid">
                     <li class="services__modal-service">
                       <i class="uil uil-check-circle services__modal-icon"></i>
-                      <p>Création de sites web</p>
-                    </li>
-                    <li class="services__modal-service">
-                      <i class="uil uil-check-circle services__modal-icon"></i>
-                      <p>Création d'applications</p>
-                    </li>
-                    <li class="services__modal-service">
-                      <i class="uil uil-check-circle services__modal-icon"></i>
-                      <p>Modding de jeu vidéo</p>
+                      <p data-translate="dev-desc">Création de sites web, applications et modding de jeu vidéo</p>
                     </li>
                   </ul>
                 </div>
@@ -369,28 +338,20 @@
             <!-- Design -->
             <div class="realisations__content">
               <div class="realisations__card">
-                <img src="assets/img/design.webp" alt="Design" class="realisations__card-bg services__button button--link">
+                <img src="assets/img/design.webp" alt="Design" class="realisations__card-bg services__button button--link" data-translate="alt-design">
                 <div>
                   <i class="uil uil-palette realisations__icon"></i>
-                  <h3 class="realisations__title">Design<br>Créatif</h3>
+                  <h3 class="realisations__title" data-translate="design-title">Design<br>Créatif</h3>
                 </div>
               </div>
               <div class="services__modal">
                 <div class="services__modal-content">
-                  <h4 class="services__modal-title">Design Créatif</h4>
+                  <h4 class="services__modal-title" data-translate="design-title">Design Créatif</h4>
                   <i class="uil uil-times services__modal-close"></i>
                   <ul class="services__modal-services grid">
                     <li class="services__modal-service">
                       <i class="uil uil-check-circle services__modal-icon"></i>
-                      <p>Design graphique</p>
-                    </li>
-                    <li class="services__modal-service">
-                      <i class="uil uil-check-circle services__modal-icon"></i>
-                      <p>Affiches & visuels pour événements</p>
-                    </li>
-                    <li class="services__modal-service">
-                      <i class="uil uil-check-circle services__modal-icon"></i>
-                      <p>Branding / Logo</p>
+                      <p data-translate="design-desc">Design graphique, affiches & visuels pour événements, branding / logo</p>
                     </li>
                   </ul>
                 </div>
@@ -400,32 +361,20 @@
             <!-- UX/UI -->
             <div class="realisations__content">
               <div class="realisations__card">
-                <img src="assets/img/UI-UX.webp" alt="UX/UI" class="realisations__card-bg services__button button--link">
+                <img src="assets/img/UI-UX.webp" alt="UX/UI" class="realisations__card-bg services__button button--link" data-translate="alt-uiux">
                 <div>
                   <i class="uil uil-browser realisations__icon"></i>
-                  <h3 class="realisations__title">UX/UI Design</h3>
+                  <h3 class="realisations__title" data-translate="uiux-title">UX/UI Design</h3>
                 </div>
               </div>
               <div class="services__modal">
                 <div class="services__modal-content">
-                  <h4 class="services__modal-title">UX/UI Design</h4>
+                  <h4 class="services__modal-title" data-translate="uiux-title">UX/UI Design</h4>
                   <i class="uil uil-times services__modal-close"></i>
                   <ul class="services__modal-services grid">
                     <li class="services__modal-service">
                       <i class="uil uil-check-circle services__modal-icon"></i>
-                      <p>Conception d'interfaces utilisateur intuitives</p>
-                    </li>
-                    <li class="services__modal-service">
-                      <i class="uil uil-check-circle services__modal-icon"></i>
-                      <p>Expérience utilisateur optimisée</p>
-                    </li>
-                    <li class="services__modal-service">
-                      <i class="uil uil-check-circle services__modal-icon"></i>
-                      <p>Prototypage et wireframing</p>
-                    </li>
-                    <li class="services__modal-service">
-                      <i class="uil uil-check-circle services__modal-icon"></i>
-                      <p>Design responsive et adaptatif</p>
+                      <p data-translate="uiux-desc">Conception d'interfaces utilisateur intuitives, expérience utilisateur optimisée, prototypage et wireframing, design responsive et adaptatif</p>
                     </li>
                   </ul>
                 </div>
@@ -438,8 +387,8 @@
 
       <section class="skills section" id="Compétences">
         <br><br>
-        <h2 class="section__title">Mes Compétences</h2>
-        <span class="section__subtitle">Mon niveau technique</span>
+        <h2 class="section__title" data-translate="skills-title">Mes Compétences</h2>
+        <span class="section__subtitle" data-translate="skills-subtitle">Mon niveau technique</span>
 
         <div class="skills__container container grid">
           <div>
@@ -448,7 +397,7 @@
               <div class="skills__header">
                 <i class="uil uil-comments skills__icon"></i>
                 <div>
-                  <h1 class="skills__title">Langues</h1>
+                  <h1 class="skills__title" data-translate="languages-title">Langues</h1>
                 </div>
                 <i class="uil uil-angle-down skills__arrow"></i>
               </div>
@@ -456,15 +405,15 @@
               <div class="skills__list grid">
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">Français</h3>
-                    <span class="skills__level">C2 (langue Maternelle)</span>
+                    <h3 class="skills__name" data-translate="skill-french">Français</h3>
+                    <span class="skills__level" data-translate="skill-french-level">C2 (langue Maternelle)</span>
                   </div>
                 </div>
                 
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">Anglais</h3>
-                    <span class="skills__level">B2</span>
+                    <h3 class="skills__name" data-translate="skill-english">Anglais</h3>
+                    <span class="skills__level" data-translate="skill-english-level">B2</span>
                   </div>
                 </div>
               </div>
@@ -475,7 +424,7 @@
               <div class="skills__header">
                 <i class="uil uil-code-branch skills__icon"></i>
                 <div>
-                  <h1 class="skills__title">Langages et Développement</h1>
+                  <h1 class="skills__title" data-translate="dev-languages-title">Langages et Développement</h1>
                 </div>
                 <i class="uil uil-angle-down skills__arrow"></i>
               </div>
@@ -483,71 +432,71 @@
               <div class="skills__list grid">
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">HTML / CSS</h3>
-                    <span class="skills__level">Avancé</span>
+                    <h3 class="skills__name" data-translate="skill-html-css">HTML / CSS</h3>
+                    <span class="skills__level" data-translate="skill-level-advanced">Avancé</span>
                   </div>
                 </div>
 
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">JavaScript</h3>
-                    <span class="skills__level">Intermédiaire</span>
+                    <h3 class="skills__name" data-translate="skill-js">JavaScript</h3>
+                    <span class="skills__level" data-translate="skill-level-intermediate">Intermédiaire</span>
                   </div>
                 </div>
 
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">PHP / MySQL</h3>
-                    <span class="skills__level">Avancé</span>
+                    <h3 class="skills__name" data-translate="skill-php-mysql">PHP / MySQL</h3>
+                    <span class="skills__level" data-translate="skill-level-advanced">Avancé</span>
                   </div>
                 </div>
 
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">C#</h3>
-                    <span class="skills__level">Intermédiaire</span>
+                    <h3 class="skills__name" data-translate="skill-csharp">C#</h3>
+                    <span class="skills__level" data-translate="skill-level-intermediate">Intermédiaire</span>
                   </div>
                 </div>
 
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">Python</h3>
-                    <span class="skills__level">Intermédiaire</span>
+                    <h3 class="skills__name" data-translate="skill-python">Python</h3>
+                    <span class="skills__level" data-translate="skill-level-intermediate">Intermédiaire</span>
                   </div>
                 </div>
 
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">VB / Batch</h3>
-                    <span class="skills__level">Intermédiaire</span>
+                    <h3 class="skills__name" data-translate="skill-vb-batch">VB / Batch</h3>
+                    <span class="skills__level" data-translate="skill-level-intermediate">Intermédiaire</span>
                   </div>
                 </div>
 
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">SQL</h3>
-                    <span class="skills__level">Avancé</span>
+                    <h3 class="skills__name" data-translate="skill-sql">SQL</h3>
+                    <span class="skills__level" data-translate="skill-level-advanced">Avancé</span>
                   </div>
                 </div>
 
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">Kotlin</h3>
-                    <span class="skills__level">Basique</span>
+                    <h3 class="skills__name" data-translate="skill-kotlin">Kotlin</h3>
+                    <span class="skills__level" data-translate="skill-level-basic">Basique</span>
                   </div>
                 </div>
 
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">C++</h3>
-                    <span class="skills__level">Intermédiaire</span>
+                    <h3 class="skills__name" data-translate="skill-cpp">C++</h3>
+                    <span class="skills__level" data-translate="skill-level-intermediate">Intermédiaire</span>
                   </div>
                 </div>
 
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">Java</h3>
-                    <span class="skills__level">Basique</span>
+                    <h3 class="skills__name" data-translate="skill-java">Java</h3>
+                    <span class="skills__level" data-translate="skill-level-basic">Basique</span>
                   </div>
                 </div>
               </div>
@@ -560,7 +509,7 @@
               <div class="skills__header">
                 <i class="uil uil-apps skills__icon"></i>
                 <div>
-                  <h1 class="skills__title">Outils et logiciels</h1>
+                  <h1 class="skills__title" data-translate="tools-title">Outils et logiciels</h1>
                 </div>
                 <i class="uil uil-angle-down skills__arrow"></i>
               </div>
@@ -568,76 +517,76 @@
               <div class="skills__list grid">
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">Adobe Photoshop / Illustrator</h3>
+                    <h3 class="skills__name" data-translate="tool-adobe">Adobe Photoshop / Illustrator</h3>
                   </div>
                 </div>
 
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">Canva / Figma</h3>
+                    <h3 class="skills__name" data-translate="tool-canva-figma">Canva / Figma</h3>
                   </div>
                 </div>
 
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">WordPress</h3>
+                    <h3 class="skills__name" data-translate="tool-wordpress">WordPress</h3>
                   </div>
                 </div>
 
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">Visual Studio / VS Code</h3>
+                    <h3 class="skills__name" data-translate="tool-vs">Visual Studio / VS Code</h3>
                   </div>
                 </div>
 
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">GitHub / Git</h3>
+                    <h3 class="skills__name" data-translate="tool-git">GitHub / Git</h3>
                   </div>
                 </div>
 
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">VirtualBox / VM Ware</h3>
+                    <h3 class="skills__name" data-translate="tool-vm">VirtualBox / VM Ware</h3>
                   </div>
                 </div>
 
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">Suite Office / Google Workspace</h3>
+                    <h3 class="skills__name" data-translate="tool-office">Suite Office / Google Workspace</h3>
                   </div>
                 </div>
 
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">Unity / Unreal Engine</h3>
+                    <h3 class="skills__name" data-translate="tool-game-engine">Unity / Unreal Engine</h3>
                   </div>
                 </div>
 
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">Android Studio</h3>
+                    <h3 class="skills__name" data-translate="tool-android-studio">Android Studio</h3>
                   </div>
                 </div>
               </div>
             </div>
 
             <span class="button button--flex services__button">
-              Tableau des compétences
+              <span data-translate="skills-table">Tableau des compétences</span>
               <i class="uil uil-arrow-right button__icon"></i>
             </span>
             
             <div class="services__modal">
               <div class="services__modal-content">
                 <i class="uil uil-times services__modal-close"></i>
-                <h4 class="services__modal-title">Vous serez redirigé</h4>
-                <h4 class="services__modal-cotent">&#128680 Le tableau des compétences est disponible sur mon GDrive</h4>
+                <h4 class="services__modal-title" data-translate="modal-redirect">Vous serez redirigé</h4>
+                <h4 class="services__modal-cotent">&#128680 <span data-translate="gdrive-skills">Le tableau des compétences est disponible sur mon GDrive</span></h4>
                 <br>
                 <ul class="services__modal-services grid">
                   <li class="services__modal-service">
                     <div class="about__buttons3">
                       <a href="https://docs.google.com/spreadsheets/d/1KbH4EntUR-nFNLrIAhkAh7-FsygnSfkC/edit?usp=sharing&ouid=110866640149523352016&rtpof=true&sd=true" class="button button--flex bas__button" target="_blank">
-                        Le visualiser <i class="uil uil-cloud-download button__icon"></i>
+                        <span data-translate="modal-view">Le visualiser</span> <i class="uil uil-cloud-download button__icon"></i>
                       </a>
                     </div>
                   </li>
@@ -652,7 +601,7 @@
 
       <section class="qualification__section service__section" id="Formations">
         <br><br>      <br><br>      <br><br>
-        <h2 class="section__title">Formations</h2> 
+        <h2 class="section__title" data-translate="education-title">Formations</h2> 
         <br>
         <div class="qualification__container container grid services__container">
           
@@ -663,24 +612,24 @@
               <!-- Qualification 1 (BTS SIO) - Gauche -->
               <div class="qualification__data">
                 <div>
-                  <h3 class="qualification__title">BTS SIO</h3> 
-                  <span class="qualification__subtitle">Lycée des métiers<Br>René-Cassin Strasbourg</span>
+                  <h3 class="qualification__title" data-translate="formation-bts-title">BTS SIO</h3> 
+                  <span class="qualification__subtitle" data-translate="formation-bts-location">Lycée des métiers<Br>René-Cassin Strasbourg</span>
                   <div class="qualification__calender">
                     <i class="uil uil-calendar-alt"></i>
                     2023 - 2025
                   </div>
                   <span class="button button--flex button--small button--link services__button">
-                    Voir plus
+                    <span data-translate="modal-more">Voir plus</span>
                     <i class="uil uil-arrow-right button__icon"></i>
                   </span>
                   <div class="services__modal">
                     <div class="services__modal-content">
-                      <h4 class="services__modal-title">BTS SIO Option SLAM:</h4>
+                      <h4 class="services__modal-title" data-translate="education-bts">BTS SIO Option SLAM:</h4>
                       <i class="uil uil-times services__modal-close"></i>
                       <ul class="services__modal-services grid">
                         <li class="services__modal-service">
                           <i class="uil uil-check-circle services__modal-icon"></i>
-                          <p>
+                          <p data-translate="education-bts-desc">
                             BTS SIO Services informatiques aux organisations Option SLAM (en cours de formation).
                           </p>
                         </li>
@@ -702,23 +651,23 @@
                   <span class="qualification__line"></span>
                 </div>
                 <div>
-                  <h3 class="qualification__title">Permis de conduire</h3>
+                  <h3 class="qualification__title" data-translate="formation-permis-title">Permis de conduire</h3>
                   <div class="qualification__calender">
                     <i class="uil uil-calendar-alt"></i>
                     01/10/2023
                   </div>
                   <span class="button button--flex button--small button--link services__button">
-                    Voir plus
+                    <span data-translate="modal-more">Voir plus</span>
                     <i class="uil uil-arrow-right button__icon"></i>
                   </span>
                   <div class="services__modal">
                     <div class="services__modal-content">
-                      <h4 class="services__modal-title">Permis de conduire :</h4>
+                      <h4 class="services__modal-title" data-translate="education-permis">Permis de conduire :</h4>
                       <i class="uil uil-times services__modal-close"></i>
                       <ul class="services__modal-services grid">
                         <li class="services__modal-service">
                           <i class="uil uil-check-circle services__modal-icon"></i>
-                          <p>Obtention Permis de conduire B</p>
+                          <p data-translate="education-permis-desc">Obtention Permis de conduire B</p>
                         </li>
                       </ul>
                     </div>
@@ -729,30 +678,30 @@
               <!-- Qualification 5 (Bac Pro SN) -->
               <div class="qualification__data">
                 <div>
-                  <h3 class="qualification__title">Bac Pro SN option C RISC</h3>
-                  <span class="qualification__subtitle">Lycée Philippes Charles<Br> Goulden Bischwiller</span>
+                  <h3 class="qualification__title" data-translate="formation-bac-title">Bac Pro SN option C RISC</h3>
+                  <span class="qualification__subtitle" data-translate="formation-bac-location">Lycée Philippes Charles<Br> Goulden Bischwiller</span>
                   <div class="qualification__calender">
                     <i class="uil uil-calendar-alt"></i>
                     2020 - 2023
                   </div>
                   <span class="button button--flex button--small button--link services__button">
-                    Voir plus
+                    <span data-translate="modal-more">Voir plus</span>
                     <i class="uil uil-arrow-right button__icon"></i>
                   </span>
                   <div class="services__modal">
                     <div class="services__modal-content">
-                      <h4 class="services__modal-title">Bac Pro SN option C RISC :</h4>
+                      <h4 class="services__modal-title" data-translate="education-bac">Bac Pro SN option C RISC :</h4>
                       <i class="uil uil-times services__modal-close"></i>
                       <ul class="services__modal-services grid">
                         <li class="services__modal-service">
                           <i class="uil uil-check-circle services__modal-icon"></i>
-                          <p>
+                          <p data-translate="education-bac-desc">
                             Système numérique réseau informatique, système communicants
                           </p>
                         </li>
                         <li class="services__modal-service">
                           <i class="uil uil-check-circle services__modal-icon"></i>
-                          <p>Mention Très bien</p>
+                          <p data-translate="education-bac-mention">Mention Très bien</p>
                         </li>
                       </ul>
                     </div>
@@ -772,7 +721,7 @@
 
       <section class="qualification__section service__section" id="Expériences">
         <br><br>       <br><br>      <br><br>
-        <h2 class="section__title" id="experiences">Expériences Professionnelles</h2>
+        <h2 class="section__title" id="experiences" data-translate="experience-title">Expériences Professionnelles</h2>
         <br>
 
         <div class="qualification__container container grid services__container">
@@ -783,8 +732,8 @@
             <!-- Expérience 1 -->
             <div class="qualification__data">
               <div>
-                <h3 class="qualification__title">BTS 2SIO SLAM, PFMP</h3>
-                <span class="qualification__subtitle">Game Asset Factory Dauendorf</span>
+                <h3 class="qualification__title" data-translate="exp-gaf-title">BTS 2SIO SLAM, PFMP</h3>
+                <span class="qualification__subtitle" data-translate="exp-gaf-location">Game Asset Factory Dauendorf</span>
                 <div class="qualification__calender">
                   <i class="uil uil-calendar-alt"></i>
                   06/01/25 - 07/02/25
@@ -793,17 +742,17 @@
 
                 </div>
                 <span class="button button--flex button--small button--link services__button">
-                  Voir plus
+                  <span data-translate="modal-more">Voir plus</span>
                   <i class="uil uil-arrow-right button__icon"></i>
                 </span>
                 <div class="services__modal">
                   <div class="services__modal-content">
-                    <h4 class="services__modal-title">Détails du stage :</h4>
+                    <h4 class="services__modal-title" data-translate="experience-details">Détails du stage :</h4>
                     <i class="uil uil-times services__modal-close"></i>
                     <ul class="services__modal-services grid">
                       <li class="services__modal-service">
                         <i class="uil uil-check-circle services__modal-icon"></i>
-                        <p>
+                        <p data-translate="experience-1-desc">
                           Mise en place de solutions de contrôle à distance, stockage cloud sécurisé, sécurisation des données et modernisation du site web de l'entreprise
                         </p>
                       </li>
@@ -826,24 +775,24 @@
                 <span class="qualification__line"></span>
               </div>
               <div>
-                <h3 class="qualification__title">BTS 1SIO SLAM, PFMP</h3>
-                <span class="qualification__subtitle">INA Schaeffler Haguenau</span>
+                <h3 class="qualification__title" data-translate="exp-ina1-title">BTS 1SIO SLAM, PFMP</h3>
+                <span class="qualification__subtitle" data-translate="exp-ina1-location">INA Schaeffler Haguenau</span>
                 <div class="qualification__calender">
                   <i class="uil uil-calendar-alt"></i>
                   27/05/24 - 05/07/24
                 </div>
                 <span class="button button--flex button--small button--link services__button">
-                  Voir plus
+                  <span data-translate="modal-more">Voir plus</span>
                   <i class="uil uil-arrow-right button__icon"></i>
                 </span>
                 <div class="services__modal">
                   <div class="services__modal-content">
-                    <h4 class="services__modal-title">Détails du stage :</h4>
+                    <h4 class="services__modal-title" data-translate="experience-details">Détails du stage :</h4>
                     <i class="uil uil-times services__modal-close"></i>
                     <ul class="services__modal-services grid">
                       <li class="services__modal-service">
                         <i class="uil uil-check-circle services__modal-icon"></i>
-                        <p>
+                        <p data-translate="experience-2-desc">
                           Développement d'une application C# pour l'ajout de traçabilité du contrôle dureté des fours à chambre à la supervision du traitement thermique.
                         </p>
                       </li>
@@ -857,24 +806,24 @@
             <!-- Expérience 1 -->
             <div class="qualification__data">
               <div>
-                <h3 class="qualification__title">Terminale SN, PFMP</h3>
-                <span class="qualification__subtitle">Groupe OCI mundolsheim</span>
+                <h3 class="qualification__title" data-translate="exp-oci-title">Terminale SN, PFMP</h3>
+                <span class="qualification__subtitle" data-translate="exp-oci-location">Groupe OCI mundolsheim</span>
                 <div class="qualification__calender">
                   <i class="uil uil-calendar-alt"></i>
                   27/02/23 - 24/03/23
                 </div>
                 <span class="button button--flex button--small button--link services__button">
-                  Voir plus
+                  <span data-translate="modal-more">Voir plus</span>
                   <i class="uil uil-arrow-right button__icon"></i>
                 </span>
                 <div class="services__modal">
                   <div class="services__modal-content">
-                    <h4 class="services__modal-title">Détails du stage :</h4>
+                    <h4 class="services__modal-title" data-translate="experience-details">Détails du stage :</h4>
                     <i class="uil uil-times services__modal-close"></i>
                     <ul class="services__modal-services grid">
                       <li class="services__modal-service">
                         <i class="uil uil-check-circle services__modal-icon"></i>
-                        <p>
+                        <p data-translate="experience-3-desc">
                           Dépannage, installation, préparation de poste, réparation de PC Grant EST
                           HP et mise en place d'installation Windows personnalisé.
                         </p>
@@ -897,24 +846,24 @@
                 <span class="qualification__line"></span>
               </div>
               <div>
-                <h3 class="qualification__title">Terminale SN, PFMP</h3>
-                <span class="qualification__subtitle">INA Schaeffler Haguenau</span>
+                <h3 class="qualification__title" data-translate="exp-ina2-title">Terminale SN, PFMP</h3>
+                <span class="qualification__subtitle" data-translate="exp-ina2-location">INA Schaeffler Haguenau</span>
                 <div class="qualification__calender">
                   <i class="uil uil-calendar-alt"></i>
                   26/09/22 - 21/10/22
                 </div>
                 <span class="button button--flex button--small button--link services__button">
-                  Voir plus
+                  <span data-translate="modal-more">Voir plus</span>
                   <i class="uil uil-arrow-right button__icon"></i>
                 </span>
                 <div class="services__modal">
                   <div class="services__modal-content">
-                    <h4 class="services__modal-title">Détails du stage :</h4>
+                    <h4 class="services__modal-title" data-translate="experience-details">Détails du stage :</h4>
                     <i class="uil uil-times services__modal-close"></i>
                     <ul class="services__modal-services grid">
                       <li class="services__modal-service">
                         <i class="uil uil-check-circle services__modal-icon"></i>
-                        <p>
+                        <p data-translate="experience-4-desc">
                           Dépannage, installation et préparation de poste pour l'entreprise
                         </p>
                       </li>
@@ -927,8 +876,8 @@
             <!-- Expérience 3 -->
             <div class="qualification__data">
               <div>
-                <h3 class="qualification__title">Seconde et Première SN, PFMP</h3>
-                <span class="qualification__subtitle">Allo informatique</span>
+                <h3 class="qualification__title" data-translate="exp-allo-title">Seconde et Première SN, PFMP</h3>
+                <span class="qualification__subtitle" data-translate="exp-allo-location">Allo informatique</span>
                 <div class="qualification__calender">
                   <i class="uil uil-calendar-alt"></i>
                   07/06/22 - 01/07/22<br><i class="uil uil-calendar-alt"></i> 
@@ -936,17 +885,17 @@
                   01/02/21 - 19/02/21
                 </div>
                 <span class="button button--flex button--small button--link services__button">
-                  Voir plus
+                  <span data-translate="modal-more">Voir plus</span>
                   <i class="uil uil-arrow-right button__icon"></i>
                 </span>
                 <div class="services__modal">
                   <div class="services__modal-content">
-                    <h4 class="services__modal-title">Détails du stage :</h4>
+                    <h4 class="services__modal-title" data-translate="experience-details">Détails du stage :</h4>
                     <i class="uil uil-times services__modal-close"></i>
                     <ul class="services__modal-services grid">
                       <li class="services__modal-service">
                         <i class="uil uil-check-circle services__modal-icon"></i>
-                        <p>
+                        <p data-translate="experience-5-desc">
                           Dépannage, installation et préparation de poste pour l'entreprise
                         </p>
                       </li>
@@ -968,24 +917,24 @@
                 <span class="qualification__line"></span>
               </div>
               <div>
-                <h3 class="qualification__title">Seconde SN, PFMP</h3>
-                <span class="qualification__subtitle">Siemens Haguenau</span>
+                <h3 class="qualification__title" data-translate="exp-siemens-title">Seconde SN, PFMP</h3>
+                <span class="qualification__subtitle" data-translate="exp-siemens-location">Siemens Haguenau</span>
                 <div class="qualification__calender">
                   <i class="uil uil-calendar-alt"></i>
                   17/05/21 - 04/06/21
                 </div>
                 <span class="button button--flex button--small button--link services__button">
-                  Voir plus
+                  <span data-translate="modal-more">Voir plus</span>
                   <i class="uil uil-arrow-right button__icon"></i>
                 </span>
                 <div class="services__modal">
                   <div class="services__modal-content">
-                    <h4 class="services__modal-title">Détails du stage :</h4>
+                    <h4 class="services__modal-title" data-translate="experience-details">Détails du stage :</h4>
                     <i class="uil uil-times services__modal-close"></i>
                     <ul class="services__modal-services grid">
                       <li class="services__modal-service">
                         <i class="uil uil-check-circle services__modal-icon"></i>
-                        <p>
+                        <p data-translate="experience-6-desc">
                           Dépannage, installation et préparation et programmation C++
                         </p>
                       </li>
@@ -1004,40 +953,40 @@
     <!--=================== Certification ===================-->
     <section class="portfolio section" id="Certifications">
       <br><br>
-      <h2 class="section__title">Certifications</h2>
-      <span class="section__subtitle">Mes Certifications</span>
+      <h2 class="section__title" data-translate="certifications-title">Certifications</h2>
+      <span class="section__subtitle" data-translate="certifications-subtitle">Mes Certifications</span>
 
       <div class="portfolio__container container swiper-container">
         <div class="swiper-wrapper">
 
           <!-- ------------------------portfollio 4-------------------- -->
           <div class="portfolio__content grid swiper-slide">
-            <img src="assets\img\pix.webp" class="portfolio__img" />
+            <img src="assets\img\pix.webp" class="portfolio__img" data-translate="alt-pix-cert" />
             <div class="portfolio__data">
-              <h3 class="portfolio__title">Certification PIX</h3>
-              <p class="portfolio__description">Lycée des métiers René-Cassin Strasbourg<Br>Obtenu le 03/03/25</p>
+              <h3 class="portfolio__title" data-translate="cert-pix-title">Certification PIX</h3>
+              <p class="portfolio__description"><span data-translate="cert-location-rene-cassin">Lycée des métiers René-Cassin Strasbourg</span><Br><span data-translate="cert-obtained">Obtenu le</span> 03/03/25</p>
               <a
                 href="https://drive.google.com/file/d/1dXLbovxNl1pnqhuVqtqRzI6rGa3iNbKG/view?usp=sharing"
                 class="button button--flex button--small portfolio__button"
                 target="_blank"
               >
-                Voir la Certification
+                <span data-translate="cert-view">Voir la Certification</span>
                 <i class="uil uil-external-link-alt button__icon"></i>
               </a>
             </div>
           </div>
           <!-- ------------------------portfollio 2-------------------- -->
           <div class="portfolio__content grid swiper-slide">
-            <img src="assets/img/cisco netacad.webp" class="portfolio__img" />
+            <img src="assets/img/cisco netacad.webp" class="portfolio__img" data-translate="alt-cisco-cert" />
             <div class="portfolio__data">
-              <h3 class="portfolio__title">Cisco Netacad - Cybersecurity Essentials</h3>
-              <p class="portfolio__description">Lycée des métiers René-Cassin Strasbourg<Br>Obtenu le 25/01/24</p>
+              <h3 class="portfolio__title" data-translate="cert-cisco-title">Cisco Netacad - Cybersecurity Essentials</h3>
+              <p class="portfolio__description"><span data-translate="cert-location-rene-cassin">Lycée des métiers René-Cassin Strasbourg</span><Br><span data-translate="cert-obtained">Obtenu le</span> 25/01/24</p>
               <a
                 href="https://drive.google.com/file/d/1mXsR8wxQgJRgE2HM-GOrqqFCbbaVEmu3/view?usp=sharing"
                 class="button button--flex button--small portfolio__button"
                 target="_blank"
               >
-                Voir la Certification
+                <span data-translate="cert-view">Voir la Certification</span>
                 <i class="uil uil-external-link-alt button__icon"></i>
               </a>
             </div>
@@ -1046,16 +995,16 @@
 
           <!-- ------------------------portfollio 1-------------------- -->
           <div class="portfolio__content grid swiper-slide">
-            <img src="assets/img/secnum.webp" class="portfolio__img" />
+            <img src="assets/img/secnum.webp" class="portfolio__img" data-translate="alt-anssi-cert" />
             <div class="portfolio__data">
-              <h3 class="portfolio__title">Secnum Académie - ANSSI</h3>
-              <p class="portfolio__description">Lycée des métiers René-Cassin Strasbourg<Br>Obtenu le 13/11/23</p>
+              <h3 class="portfolio__title" data-translate="cert-anssi-title">Secnum Académie - ANSSI</h3>
+              <p class="portfolio__description"><span data-translate="cert-location-rene-cassin">Lycée des métiers René-Cassin Strasbourg</span><Br><span data-translate="cert-obtained">Obtenu le</span> 13/11/23</p>
               <a
                 href="https://drive.google.com/file/d/1mWe7G3jt-bpAaOG8OV7N_xKE5UxhzZXb/view?usp=sharing"
                 class="button button--flex button--small portfolio__button"
                 target="_blank"
               >
-                Voir la Certification
+                <span data-translate="cert-view">Voir la Certification</span>
                 <i class="uil uil-external-link-alt button__icon"></i>
               </a>
             </div>
@@ -1063,16 +1012,16 @@
 
           <!-- ------------------------portfollio 5-------------------- -->
           <div class="portfolio__content grid swiper-slide">
-            <img src="assets\img\psc1.webp" class="portfolio__img" />
+            <img src="assets\img\psc1.webp" class="portfolio__img" data-translate="alt-psc1-cert" />
             <div class="portfolio__data">
-              <h3 class="portfolio__title">PSC1</h3>
-              <p class="portfolio__description">Collège Albert Camus Soufflenheim<Br>Obtenu en 2020</p>
+              <h3 class="portfolio__title" data-translate="cert-psc1-title">PSC1</h3>
+              <p class="portfolio__description"><span data-translate="cert-location-soufflenheim">Collège Albert Camus Soufflenheim</span><Br><span data-translate="cert-obtained-in">Obtenu en</span> 2020</p>
               <a
                 href=""
                 class="button button--flex button--small portfolio__button"
                 target="_blank"
               >
-                Under construction
+                <span data-translate="cert-under-construction">Under Construction</span>
                 <i class="uil uil-external-link-alt button__icon"></i>
               </a>
             </div>
@@ -1096,25 +1045,20 @@
     <!--=================== Portfolio ===================-->
     <section class="portfolio section" id="Projets">
       <br><br>
-      <h2 class="section__title">Projets</h2>
-      <span class="section__subtitle">Mes projets récents</span>
+      <h2 class="section__title" data-translate="projects-title">Projets</h2>
+      <span class="section__subtitle" data-translate="projects-subtitle">Mes projets récents</span>
 
       <div class="portfolio__container container swiper-container">
         <div class="swiper-wrapper">
 
           <!-- ------------------------portfollio 1-------------------- -->
           <div class="portfolio__content grid swiper-slide">
-            <img src="assets/img/n-zik.webp" class="portfolio__img" />
+            <img src="assets/img/n-zik.webp" class="portfolio__img" data-translate="alt-nzik-project" />
             <div class="portfolio__data">
-              <h3 class="portfolio__title">N-Zik est une application Android multilingue pour YouTube Music, optimisée pour l’UX/UI et enrichie de nouvelles fonctionnalités.</h3>
-              <p class="portfolio__description">Projet Personnel<Br>Commencé le 20/05/25</p>
-              <a
-
-                href="https://github.com/NEVARLeVrai/N-Zik"
-                class="button button--flex button--small portfolio__button"
-                target="_blank"
-              >
-                Voir le Projet
+              <h3 class="portfolio__title" data-translate="project-nzik-title">N-Zik est une application Android multilingue pour YouTube Music, optimisée pour l'UX/UI et enrichie de nouvelles fonctionnalités.</h3>
+              <p class="portfolio__description"><span data-translate="project-personal">Projet Personnel</span><Br><span data-translate="project-started">Commencé le</span> 20/05/25</p>
+              <a href="https://github.com/NEVARLeVrai/N-Zik" class="button button--flex button--small portfolio__button" target="_blank">
+                <span data-translate="project-view">Voir le Projet</span>
                 <i class="uil uil-external-link-alt button__icon"></i>
               </a>
             </div>
@@ -1127,15 +1071,14 @@
           <div class="portfolio__content grid swiper-slide">
             <iframe class="gdrive" src="https://drive.google.com/file/d/1GefpYUwNduLZoXhidZC_FezNdoafxicF/preview"></iframe>
             <div class="portfolio__data">
-              <h3 class="portfolio__title">Site web Game Asset Factory</h3>
-              <p class="portfolio__description">Projet de stage<Br>Commencé le 06/01/25 au 07/02/25</p>
+              <h3 class="portfolio__title" data-translate="project-gaf-title">Site web Game Asset Factory</h3>
+              <p class="portfolio__description"><span data-translate="project-stage">Projet de stage</span><Br><span data-translate="project-gaf-period">Commencé le 06/01/25 au 07/02/25</span></p>
               <a
-
                 href="https://github.com/GameAssetFactory/GAF-website"
                 class="button button--flex button--small portfolio__button"
                 target="_blank"
               >
-                Voir le Projet
+                <span data-translate="project-view">Voir le Projet</span>
                 <i class="uil uil-external-link-alt button__icon"></i>
               </a>
             </div>
@@ -1146,14 +1089,14 @@
           <div class="portfolio__content grid swiper-slide">
             <iframe class="gdrive" src="https://drive.google.com/file/d/1yurOLRkR04YHIsxvHDTMq5Kz65Ie5AbJ/preview"></iframe>
             <div class="portfolio__data">
-              <h3 class="portfolio__title">Site web Criee</h3>
-              <p class="portfolio__description">Lycée des métiers René-Cassin Strasbourg<Br>Commencé le 22/11/24</p>
+              <h3 class="portfolio__title" data-translate="project-criee-title">Site web Criee</h3>
+              <p class="portfolio__description"><span data-translate="project-school-rene-cassin">Lycée des métiers René-Cassin Strasbourg</span><Br><span data-translate="project-finished">Finis le</span> 31/07/24</p>
               <a
                 href="https://drive.google.com/drive/folders/1nA8EuG93ZEMqo_PSFK-JWvWollhF8cXT?usp=sharing"
                 class="button button--flex button--small portfolio__button"
                 target="_blank"
               >
-                Voir la Version CodeIniter318
+                <span data-translate="project-view-codeigniter">Voir la Version CodeIniter318</span>
                 <i class="uil uil-external-link-alt button__icon"></i>
               </a>
             </div>
@@ -1163,14 +1106,14 @@
           <div class="portfolio__content grid swiper-slide">
             <iframe class="gdrive" src="https://drive.google.com/file/d/1MkzlUtXvOM9z61xxrMJf3Qk6h2nYMSxn/preview"></iframe>
             <div class="portfolio__data">
-              <h3 class="portfolio__title">TP Crédit Céleste en C# avec une BDD SQL Server</h3>
-              <p class="portfolio__description">Lycée des métiers René-Cassin Strasbourg<Br>Commencé le 14/10/24</p>
+              <h3 class="portfolio__title" data-translate="project-celeste-title">TP Crédit Céleste en C# avec une BDD SQL Server</h3>
+              <p class="portfolio__description"><span data-translate="project-school-rene-cassin">Lycée des métiers René-Cassin Strasbourg</span><Br><span data-translate="project-started">Commencé le</span> 14/10/24</p>
               <a
                 href="https://drive.google.com/drive/folders/15jT02QkfnUY6n2PAxfqLlduV58vRaiwm?usp=sharing"
                 class="button button--flex button--small portfolio__button"
                 target="_blank"
               >
-                Voir le TP
+                <span data-translate="project-view-tp">Voir le TP</span>
                 <i class="uil uil-external-link-alt button__icon"></i>
               </a>
             </div>
@@ -1180,14 +1123,14 @@
           <div class="portfolio__content grid swiper-slide">
             <iframe class="gdrive" src="https://drive.google.com/file/d/1fFCrQcsCMYHOlGN8UIOcifQkBlMAksjL/preview"></iframe>
             <div class="portfolio__data">
-              <h3 class="portfolio__title">TP Restaurant en C#</h3>
-              <p class="portfolio__description">Lycée des métiers René-Cassin Strasbourg<Br>Finis le 31/07/24</p>
+              <h3 class="portfolio__title" data-translate="project-resto-title">TP Restaurant en C#</h3>
+              <p class="portfolio__description"><span data-translate="project-school-rene-cassin">Lycée des métiers René-Cassin Strasbourg</span><Br><span data-translate="project-finished">Finis le</span> 31/07/24</p>
               <a
                 href="https://drive.google.com/drive/folders/14f8kJEFnR1SUeUlmk4mBtLyEkMSCAaiz?usp=sharing"
                 class="button button--flex button--small portfolio__button"
                 target="_blank"
               >
-                Voir le TP Restaurant
+                <span data-translate="project-view-tp-resto">Voir le TP Restaurant</span>
                 <i class="uil uil-external-link-alt button__icon"></i>
               </a>
             </div>
@@ -1198,14 +1141,14 @@
             <iframe class="gdrive" src="https://drive.google.com/file/d/11yeFM64m3vwl3hHqbk00yRsjmHBlhOsG/preview"></iframe>
 
             <div class="portfolio__data">
-              <h3 class="portfolio__title">Site Web Boulangerie - Le Fournil Alsacien</h3>
-              <p class="portfolio__description">Lycée des métiers René-Cassin Strasbourg<Br>Finis le 31/07/24 et 27/09/24</p>
+              <h3 class="portfolio__title" data-translate="project-boulangerie-title">Site Web Boulangerie - Le Fournil Alsacien</h3>
+              <p class="portfolio__description"><span data-translate="project-school-rene-cassin">Lycée des métiers René-Cassin Strasbourg</span><Br><span data-translate="project-finished">Finis le</span> 31/07/24</p>
               <a
                 href="https://drive.google.com/drive/folders/1IKwT-lK4BpVdc1iXyLsZChqxfy_nqUzB?usp=sharing"
                 class="button button--flex button--small portfolio__button"
                 target="_blank"
               >
-                Voir la Version HTML/CSS/PHP
+                <span data-translate="project-view-html">Voir la Version HTML/CSS/PHP</span>
                 <i class="uil uil-external-link-alt button__icon"></i>
               </a>
 
@@ -1214,7 +1157,7 @@
               class="button button--flex button--small portfolio__button"
               target="_blank"
               >
-                Voir la Version Framework CodeIgniter318
+                <span data-translate="project-view-codeigniter">Voir la Version Framework CodeIgniter318</span>
                 <i class="uil uil-external-link-alt button__icon"></i>
             </a>
             </div>
@@ -1224,14 +1167,14 @@
           <div class="portfolio__content grid swiper-slide">
             <iframe class="gdrive" src="https://drive.google.com/file/d/1jRpeJR8wqO81AIXnP7uLWpT9QWLIb3jV/preview"></iframe>
             <div class="portfolio__data">
-              <h3 class="portfolio__title">Site Web JPO - (Journée Portes Ouvertes)</h3>
-              <p class="portfolio__description">Lycée des métiers René-Cassin Strasbourg<Br>Finis le 04/09/23</p>
+              <h3 class="portfolio__title" data-translate="project-jpo-title">Site Web JPO - (Journée Portes Ouvertes)</h3>
+              <p class="portfolio__description"><span data-translate="project-school-rene-cassin">Lycée des métiers René-Cassin Strasbourg</span><Br><span data-translate="project-finished">Finis le</span> 04/09/23</p>
               <a
                 href="https://drive.google.com/drive/folders/1qpxe0LY-jPtuIStpi1V6FkP_gPCAuumu?usp=sharing"
                 class="button button--flex button--small portfolio__button"
                 target="_blank"
               >
-                Voir la Version HTML/CSS/PHP
+                <span data-translate="project-view-html">Voir la Version HTML/CSS/PHP</span>
                 <i class="uil uil-external-link-alt button__icon"></i>
               </a>
             </div>
@@ -1252,15 +1195,15 @@
 
     <!--===================== Contact Me =====================-->
     <section class="contact section" id="Me-Contacter">
-      <h2 class="section__title">Contactez-moi par email</h2>
-      <span class="section__subtitle">N'hésitez pas à me contacter pour plus d'informations par email</span>
+      <h2 class="section__title" data-translate="contact-title">Contactez-moi par email</h2>
+      <span class="section__subtitle" data-translate="contact-subtitle">N'hésitez pas à me contacter pour plus d'informations par email</span>
 
       <div class="container grid">
         <div class="contact__info">
           <div class="contact__information">
             <i class="uil uil-envelope-minus contact__icon"></i>
             <div>
-              <h3 class="contact__title">Email</h3>
+              <h3 class="contact__title" data-translate="contact-email">Email</h3>
               <span class="contact__subtitle">daniels-soares67@hotmail.com</span>
             </div>
           </div>
@@ -1268,8 +1211,8 @@
           <div class="contact__information">
             <i class="uil uil-map-marker contact__icon"></i>
             <div>
-              <h3 class="contact__title">Localisation</h3>
-              <span class="contact__subtitle">Alsace, France</span>
+              <h3 class="contact__title" data-translate="contact-location">Localisation</h3>
+              <span class="contact__subtitle" data-translate="contact-location-value">Alsace, France</span>
             </div>
           </div>
         </div>
@@ -1277,7 +1220,7 @@
         <form action="" class="contact__form grid">
           <div class="contact__inputs grid">
             <div class="contact__content">
-              <label for="firstname" class="contact__label">Prénom</label>
+              <label for="firstname" class="contact__label" data-translate="contact-firstname">Prénom</label>
               <div class="contact__input-wrapper">
                 <i class="uil uil-user contact__input-icon"></i>
                 <input type="text" class="contact__input" id="firstname" required />
@@ -1285,7 +1228,7 @@
             </div>
 
             <div class="contact__content">
-              <label for="lastname" class="contact__label">Nom</label>
+              <label for="lastname" class="contact__label" data-translate="contact-lastname">Nom</label>
               <div class="contact__input-wrapper">
                 <i class="uil uil-user contact__input-icon"></i>
                 <input type="text" class="contact__input" id="lastname" required />
@@ -1293,7 +1236,7 @@
             </div>
 
             <div class="contact__content">
-              <label for="subject" class="contact__label">Sujet</label>
+              <label for="subject" class="contact__label" data-translate="contact-subject">Sujet</label>
               <div class="contact__input-wrapper">
                 <i class="uil uil-file-alt contact__input-icon"></i>
                 <input type="text" class="contact__input" id="subject" required />
@@ -1302,19 +1245,15 @@
           </div>
 
           <div class="contact__content">
-            <label for="message" class="contact__label">Message</label>
+            <label for="message" class="contact__label" data-translate="contact-message">Message</label>
             <div class="contact__input-wrapper">
               <i class="uil uil-message contact__input-icon"></i>
               <textarea name="message" id="message" cols="0" rows="7" class="contact__input" required></textarea>
             </div>
           </div>
           <div>
-            <a
-              href="#"
-              class="button button--flex button--small portfolio__button"
-              id="sendEmail"
-            >
-              Envoyer le mail
+            <a href="#" class="button button--flex button--small portfolio__button" id="sendEmail">
+              <span data-translate="contact-send">Envoyer le mail</span>
               <i class="uil uil-message button__icon"></i>
             </a>
           </div>
@@ -1330,7 +1269,7 @@
             const message = document.getElementById('message').value;
         
             if (!firstname || !lastname || !subject || !message) {
-              alert("Please fill in all fields.");
+              alert(window.languageSystem ? window.languageSystem.translateText('contact-fill-all') : "Please fill in all fields.");
               return;
             }
 
@@ -1352,21 +1291,20 @@
     <div class="footer__bg">
       <div class="footer__container container grid">
         <div>
-          <img src="assets/img/profile.webp" alt="Daniels Soares" class="footer__img">
-          <h1 class="footer__title">Daniels.exe</h1>
-          <span class="footer__subtitle"
-            >Étudiant en développement<br> Application et Web</span
-          >
+          <img src="assets/img/profile.webp" alt="Daniels Soares" class="footer__img" data-translate="alt-footer-profile">
+          <h1 class="footer__title" data-translate="footer-title">Daniels.exe</h1>
+          <span class="footer__subtitle" data-translate="footer-subtitle">Étudiant en développement<br> Application et Web</span>
         </div>
 
         <ul class="footer__links">
           <li>
-            <a href="#Accueil" class="footer__link">Accueil</a>
+            <a href="#Accueil" class="footer__link" data-translate="footer-home">Accueil</a>
           </li>
-            <a href="#Me-Contacter" class="footer__link">Me Contacter</a>
+          <li>
+            <a href="#Me-Contacter" class="footer__link" data-translate="footer-contact">Me Contacter</a>
           </li>
-          </li>
-            <a href="#Accueil" id="toggleFontButton" class="footer__link">SECRET</a>
+          <li>
+            <a href="#Accueil" id="toggleFontButton" class="footer__link" data-translate="footer-secret">SECRET</a>
           </li>
         </ul>
   </footer>
@@ -1401,6 +1339,7 @@
   <script type="text/javascript" src="assets/swiper-bundle.min.js"></script>
   <script src="https://kit.fontawesome.com/2205d59d52.js" crossorigin="anonymous"></script>
   <script src="assets/ptj.js"></script>
+  <script src="assets/language-system.js"></script>
 
 
   <script>
