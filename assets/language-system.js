@@ -94,7 +94,6 @@ class LanguageSystem {
                 'tool-office': 'Suite Office / Google Workspace',
                 'tool-game-engine': 'Unity / Unreal Engine',
                 'tool-android-studio': 'Android Studio',
-                'skills-table': 'Tableau des compétences',
                 'gdrive-skills': 'Le tableau des compétences est disponible sur mon GDrive',
                 
                 // Formations
@@ -287,7 +286,6 @@ class LanguageSystem {
                 'tool-office': 'Office Suite / Google Workspace',
                 'tool-game-engine': 'Unity / Unreal Engine',
                 'tool-android-studio': 'Android Studio',
-                'skills-table': 'Skills table',
                 'gdrive-skills': 'The skills table is available on my GDrive',
                 
                 // Formations
@@ -480,7 +478,6 @@ class LanguageSystem {
                 'tool-office': 'Office Suite / Google Workspace',
                 'tool-game-engine': 'Unity / Unreal Engine',
                 'tool-android-studio': 'Android Studio',
-                'skills-table': 'Fähigkeitstabelle',
                 'gdrive-skills': 'Die Fähigkeitstabelle ist auf meinem GDrive verfügbar',
                 
                 // Formations
@@ -673,7 +670,6 @@ class LanguageSystem {
                 'tool-office': 'Suite Office / Google Workspace',
                 'tool-game-engine': 'Unity / Unreal Engine',
                 'tool-android-studio': 'Android Studio',
-                'skills-table': 'Tabla de habilidades',
                 'gdrive-skills': 'La tabla de habilidades está disponible en mi GDrive',
                 
                 // Formations
