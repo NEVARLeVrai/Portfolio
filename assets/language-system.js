@@ -118,6 +118,11 @@ class LanguageSystem {
                 
                 // Expériences
                 'experience-title': 'Expériences Professionnelles',
+                'exp-gaf2026-title': 'BUT MMI, Stage',
+                'exp-gaf2026-location': 'Game Asset Factory',
+                'exp-gaf2026-desc-1': "<strong>Production 3D & UE5 :</strong> Réalisation d'un pack d'environnement urbain post-apocalyptique (fab.com). Modélisation (Blender), Texturing PBR (Substance Painter), assemblage et Blueprint (Unreal Engine 5).",
+                'exp-gaf2026-desc-2': "<strong>Développement Web :</strong> Mise à jour du site portfolio de l'entreprise : correction SEO, sitemap, routage dynamique, menu déroulant stylisé et mentions légales.",
+                'exp-gaf2026-desc-3': "<strong>Maintenance IT :</strong> Installation, maintenance et dépannage du serveur de synchronisation Nextcloud.",
                 'exp-gaf-title': 'BTS 2SIO SLAM, PFMP',
                 'exp-gaf-location': 'Game Asset Factory Dauendorf',
                 'exp-ina1-title': 'BTS 1SIO SLAM, PFMP',
@@ -310,6 +315,11 @@ class LanguageSystem {
                 
                 // Expériences
                 'experience-title': 'Professional Experience',
+                'exp-gaf2026-title': 'BUT MMI, Internship',
+                'exp-gaf2026-location': 'Game Asset Factory',
+                'exp-gaf2026-desc-1': "<strong>3D Production & UE5:</strong> Creation of a post-apocalyptic urban environment pack (fab.com). Modeling (Blender), PBR Texturing (Substance Painter), assembly and Blueprint (Unreal Engine 5).",
+                'exp-gaf2026-desc-2': "<strong>Web Development:</strong> Update of the company's portfolio website: SEO correction, sitemap, dynamic routing, stylized dropdown menu and legal notices.",
+                'exp-gaf2026-desc-3': "<strong>IT Maintenance:</strong> Installation, maintenance and troubleshooting of the Nextcloud synchronization server.",
                 'exp-gaf-title': '2nd Year BTS SIO SLAM, Internship',
                 'exp-gaf-location': 'Game Asset Factory Dauendorf',
                 'exp-ina1-title': '1st Year BTS SIO SLAM, Internship',
@@ -502,6 +512,11 @@ class LanguageSystem {
                 
                 // Expériences
                 'experience-title': 'Berufserfahrung',
+                'exp-gaf2026-title': 'BUT MMI, Praktikum',
+                'exp-gaf2026-location': 'Game Asset Factory',
+                'exp-gaf2026-desc-1': "<strong>3D-Produktion & UE5:</strong> Erstellung eines postapokalyptischen städtischen Umgebungspakets (fab.com). Modellierung (Blender), PBR-Texturierung (Substance Painter), Montage und Blueprint (Unreal Engine 5).",
+                'exp-gaf2026-desc-2': "<strong>Webentwicklung:</strong> Aktualisierung der Portfolio-Website des Unternehmens: SEO-Korrektur, Sitemap, dynamisches Routing, stilisiertes Dropdown-Menü und rechtliche Hinweise.",
+                'exp-gaf2026-desc-3': "<strong>IT-Wartung:</strong> Installation, Wartung und Fehlerbehebung des Nextcloud-Synchronisationsservers.",
                 'exp-gaf-title': '2. Jahr BTS SIO SLAM, Praktikum',
                 'exp-gaf-location': 'Game Asset Factory Dauendorf',
                 'exp-ina1-title': '1. Jahr BTS SIO SLAM, Praktikum',
@@ -694,6 +709,11 @@ class LanguageSystem {
                 
                 // Expériences
                 'experience-title': 'Experiencia Profesional',
+                'exp-gaf2026-title': 'BUT MMI, Prácticas',
+                'exp-gaf2026-location': 'Game Asset Factory',
+                'exp-gaf2026-desc-1': "<strong>Producción 3D y UE5:</strong> Creación de un paquete de entorno urbano postapocalíptico (fab.com). Modelado (Blender), Texturizado PBR (Substance Painter), ensamblaje y Blueprint (Unreal Engine 5).",
+                'exp-gaf2026-desc-2': "<strong>Desarrollo Web:</strong> Actualización del sitio web del portafolio de la empresa: corrección SEO, mapa del sitio, enrutamiento dinámico, menú desplegable estilizado y avisos legales.",
+                'exp-gaf2026-desc-3': "<strong>Mantenimiento TI:</strong> Instalación, mantenimiento y resolución de problemas del servidor de sincronización Nextcloud.",
                 'exp-gaf-title': '2º año BTS SIO SLAM, Prácticas',
                 'exp-gaf-location': 'Game Asset Factory Dauendorf',
                 'exp-ina1-title': '1er año BTS SIO SLAM, Prácticas',
